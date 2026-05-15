@@ -241,22 +241,6 @@
   }
   .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
 
-  /* Rotating badge */
-  .hero-spin-badge {
-    position: absolute; right: 80px; bottom: 100px;
-    width: 160px; height: 160px;
-  }
-  .spin-circle {
-    width: 160px; height: 160px;
-    animation: spin 14s linear infinite;
-    position: absolute;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .spin-inner {
-    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  }
-  .spin-inner i { font-size: 28px; color: #fff; }
-
   .hero-right-img {
     position: absolute; right: 0; top: 0; bottom: 0;
     width: 42%;
@@ -423,33 +407,6 @@
   .prof-info h5 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
   .prof-info span { font-size: 13px; color: var(--gold); font-weight: 500; }
 
-  /* ========== RESEARCH ========== */
-  .research { padding: 100px 0; background: #fff; }
-  .research-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 24px; }
-  .research-card {
-    border-radius: 8px; overflow: hidden;
-    position: relative; cursor: pointer;
-  }
-  .research-card img { width: 100%; object-fit: cover; transition: transform 0.5s; display: block; }
-  .research-card.big img { height: 440px; }
-  .research-card.small img { height: 208px; }
-  .research-card:hover img { transform: scale(1.04); }
-  .research-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(9,15,34,0.88) 0%, rgba(9,15,34,0.05) 55%);
-    padding: 24px; display: flex; flex-direction: column; justify-content: flex-end;
-  }
-  .research-tag {
-    display: inline-block; background: var(--gold); color: var(--navy);
-    font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
-    padding: 4px 10px; border-radius: 2px; margin-bottom: 10px;
-    align-self: flex-start;
-  }
-  .research-card h4 { font-size: 18px; font-weight: 600; color: #fff; line-height: 1.35; margin-bottom: 8px; }
-  .research-card.small h4 { font-size: 15px; }
-  .research-card p { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6; }
-  .research-side { display: flex; flex-direction: column; gap: 24px; }
-
   /* ========== TESTIMONIALS ========== */
   .testimonials { padding: 100px 0; background: var(--navy); }
   .testimonials .section-title { color: #fff; }
@@ -457,18 +414,46 @@
   .testi-header { text-align: center; margin-bottom: 56px; }
   .testi-desc { font-size: 15px; color: rgba(255,255,255,0.6); max-width: 540px; margin: 0 auto; }
   .testi-slider { position: relative; overflow: hidden; }
-  .testi-track { display: flex; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); }
+
+  .testi-track { 
+    display: flex; 
+    transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); 
+    align-items: stretch; 
+  }
+
   .testi-card {
-    min-width: calc(50% - 12px); margin-right: 24px;
+    width: calc(50% - 12px); margin-right: 24px;
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 10px; padding: 40px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 280px;
+    overflow: hidden;
   }
+
   .testi-quote { font-size: 48px; color: var(--gold); line-height: 1; margin-bottom: 16px; font-family: serif; }
   .testi-card p { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.85; margin-bottom: 28px; }
-  .testi-author { display: flex; align-items: center; gap: 14px; }
-  .testi-author img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
+  
+  .testi-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+    flex-shrink: 0;
+  }
+
+  .testi-author img {
+    width: 50px; height: 50px; border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--gold);
+    flex-shrink: 0;
+  }
+
   .testi-author h5 { font-size: 15px; font-weight: 600; color: #fff; }
   .testi-author span { font-size: 12px; color: var(--gold); }
   .testi-stars { color: var(--gold); font-size: 12px; margin-top: 2px; }
@@ -618,10 +603,8 @@
     .hero-right-img { display: none; }
     .hero-spin-badge { display: none; }
     .about-grid, .campus-header, .blog-grid { grid-template-columns: 1fr; }
-    .stats-grid, .faculty-grid, .prof-grid, .campus-cards, .events-grid, .research-grid { grid-template-columns: repeat(2, 1fr); }
+    .stats-grid, .faculty-grid, .prof-grid, .campus-cards, .events-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: 1fr 1fr; }
-    .research-grid { grid-template-columns: 1fr; }
-    .research-card.big img { height: 260px; }
     .testi-card { min-width: 100%; }
   }
   @media (max-width: 640px) {
@@ -688,7 +671,7 @@
           <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
           <div class="dropdown">
             <a href="#">About Us</a><a href="#">Faculty</a><a href="#">Events</a>
-            <a href="#">Research</a><a href="#">Campus Life</a><a href="#">Alumni</a>
+            <a href="#">Campus Life</a><a href="#">Alumni</a>
           </div>
         </li>
         <li>
@@ -751,14 +734,12 @@
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span><i class="fa-solid fa-graduation-cap"></i> Academic Excellence</span>
-    <span><i class="fa-solid fa-flask"></i> Cutting-edge Research</span>
     <span><i class="fa-solid fa-users"></i> Vibrant Campus Life</span>
     <span><i class="fa-solid fa-globe"></i> Global Network</span>
     <span><i class="fa-solid fa-medal"></i> World-Class Faculty</span>
     <span><i class="fa-solid fa-book"></i> 300+ Programs</span>
     <!-- Duplicate -->
     <span><i class="fa-solid fa-graduation-cap"></i> Academic Excellence</span>
-    <span><i class="fa-solid fa-flask"></i> Cutting-edge Research</span>
     <span><i class="fa-solid fa-users"></i> Vibrant Campus Life</span>
     <span><i class="fa-solid fa-globe"></i> Global Network</span>
     <span><i class="fa-solid fa-medal"></i> World-Class Faculty</span>
@@ -815,7 +796,7 @@
           </div>
           <div class="feature-item">
             <div class="feature-icon"><i class="fa fa-flask"></i></div>
-            <div><h5>World-Class Research</h5><p>Leading innovation across disciplines</p></div>
+            <div><h5>World-Class labs</h5><p>Leading innovation across disciplines</p></div>
           </div>
           <div class="feature-item">
             <div class="feature-icon"><i class="fa fa-globe"></i></div>
@@ -841,43 +822,43 @@
         <div class="section-label reveal">Our Faculty</div>
         <h2 class="section-title reveal">Academic <em>Programs</em></h2>
       </div>
-      <a href="#" class="link-arrow reveal">More Faculty <i class="fa fa-arrow-right"></i></a>
+      <a href="allprog.html" class="link-arrow reveal">More Programs <i class="fa fa-arrow-right"></i></a>
     </div>
     <div class="faculty-grid">
       <div class="faculty-card reveal">
         <div class="faculty-card-inner">
           <div class="faculty-num">01</div>
-          <div class="faculty-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-          <h4>Nursing, DNP</h4>
-          <p>Embark on a journey of knowledge discovery, and growth at Nova University in health sciences.</p>
-          <a href="#" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
+          <div class="faculty-icon"><i class="fa-solid fa-code"></i></div>
+          <h4>B.Sc Software Development</h4>
+          <p>Embark on a journey of knowledge discovery, and growth at Nova University in software development.</p>
+          <a href="sd.html" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="faculty-card reveal reveal-delay-1">
         <div class="faculty-card-inner">
           <div class="faculty-num">02</div>
-          <div class="faculty-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
-          <h4>M.A. in Education</h4>
-          <p>Embark on a journey of knowledge discovery, and growth at Nova University in education.</p>
-          <a href="#" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
+          <div class="faculty-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h4>M.A. Creative Writing</h4>
+          <p>Embark on a journey of knowledge discovery, and growth at Nova University in creative writing.</p>
+          <a href="cw.html" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="faculty-card reveal reveal-delay-2">
         <div class="faculty-card-inner">
           <div class="faculty-num">03</div>
-          <div class="faculty-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h4>Business Administration</h4>
-          <p>Embark on a journey of knowledge discovery, and growth at Nova University in business.</p>
-          <a href="#" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
+          <div class="faculty-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h4>B.A. Architecture</h4>
+          <p>Embark on a journey of knowledge discovery, and growth at Nova University in architecture.</p>
+          <a href="arch.html" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="faculty-card reveal reveal-delay-3">
         <div class="faculty-card-inner">
           <div class="faculty-num">04</div>
           <div class="faculty-icon"><i class="fa-solid fa-coins"></i></div>
-          <h4>Economics, BA</h4>
-          <p>Embark on a journey of knowledge discovery, and growth at Nova University in economics.</p>
-          <a href="#" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
+          <h4>B.F.A. Cinematography</h4>
+          <p>Embark on a journey of knowledge discovery, and growth at Nova University in cinematography.</p>
+          <a href="cine.html" class="card-link">About Faculty <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -974,46 +955,6 @@
           </div>
         </div>
         <div class="prof-info"><h5>Michael McGarvey</h5><span>Professor of Literature</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RESEARCH -->
-<section class="research">
-  <div class="container">
-    <div class="section-header">
-      <div>
-        <div class="section-label reveal">Innovation Hub</div>
-        <h2 class="section-title reveal">Publication & <em>Research</em></h2>
-      </div>
-      <a href="#" class="link-arrow reveal">View All <i class="fa fa-arrow-right"></i></a>
-    </div>
-    <p style="max-width:620px;color:var(--text-muted);line-height:1.8;margin-bottom:48px;" class="reveal">Dive into the vast array of research offered at Nova, spanning across 10+ specializations. Embrace an educational journey that ignites intellectual curiosity and nurtures intuitive learning.</p>
-    <div class="research-grid">
-      <div class="research-card big reveal">
-        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=700&q=80" alt="Research">
-        <div class="research-overlay">
-          <span class="research-tag">Environment</span>
-          <h4>Exploring Environmental Frontiers: Unveiling Insights in Labs & Research</h4>
-          <p>A rigorous peer-reviewed platform for applied scientific research.</p>
-        </div>
-      </div>
-      <div class="research-side">
-        <div class="research-card small reveal reveal-delay-1">
-          <img src="https://images.unsplash.com/photo-1532094349884-543559be0f93?w=600&q=80" alt="Research">
-          <div class="research-overlay">
-            <span class="research-tag">Innovation</span>
-            <h4>Unveiling the Frontiers of Discovery and Innovation</h4>
-          </div>
-        </div>
-        <div class="research-card small reveal reveal-delay-2">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Research">
-          <div class="research-overlay">
-            <span class="research-tag">Society</span>
-            <h4>Are Social Networks Beneficial for Our Society?</h4>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -1239,7 +1180,6 @@
             <li><a href="#">Academic</a></li>
             <li><a href="#">Athletics</a></li>
             <li><a href="#">Campus Life</a></li>
-            <li><a href="#">Research</a></li>
             <li><a href="#">Academic Area</a></li>
           </ul>
         </div>
@@ -1315,16 +1255,17 @@
 
   // Testimonial slider
   const track = document.getElementById('testiTrack');
-  const cards = track.children;
+  const cards = Array.from(track.children);
   let current = 0;
   let perView = window.innerWidth < 768 ? 1 : 2;
-  const max = cards.length - perView;
 
   function slideTo(idx) {
+    const max = cards.length - perView;
     current = Math.max(0, Math.min(idx, max));
-    const cardW = cards[0].offsetWidth + 24;
+    const cardW = cards[0].getBoundingClientRect().width + 24;
     track.style.transform = `translateX(-${current * cardW}px)`;
   }
+
   document.getElementById('testiNext').addEventListener('click', () => slideTo(current + 1));
   document.getElementById('testiPrev').addEventListener('click', () => slideTo(current - 1));
   window.addEventListener('resize', () => {
@@ -1332,11 +1273,8 @@
     slideTo(0);
   });
 
-  document.getElementById('watchBtn').addEventListener('click', (e) => { e.preventDefault(); openModal(); });
-  document.getElementById('heroPlayBtn').addEventListener('click', openModal);
-  document.querySelector('.hero-spin-badge').addEventListener('click', openModal);
-  document.getElementById('closeModal').addEventListener('click', closeModal);
-  modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+  slideTo(0);
+
 </script>
 
 </body>
