@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now — University Admissions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/programs.css" />
+    <link rel="stylesheet" href="css/applynow.css" />
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="tel:+1800123456"><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</a>
+      <div class="tb-divider"></div>
+      <a href="mailto:admissionsnova@university.edu"><i class="fa-solid fa-envelope"></i> admissionsnova@university.edu</a>
+      <div class="tb-divider"></div>
+      <a href="#"><i class="fa-solid fa-clock"></i> Mon–Fri, 9am–5pm</a>
+    </div>
+    <div class="top-bar-right">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <div class="tb-sep"></div>
+      <select class="lang-select"><option>ENG</option></select>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="logo-text">
+          <span>University of Nova</span>
+          <span> excellence redefined daily </span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <button class="nav-close" id="navClose"><i class="fa fa-times"></i></button>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="#">About Us</a><a href="#">Faculty</a><a href="#">Events</a>
+            <a href="#">Campus Life</a><a href="#">Alumni</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Academics <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown mega">
+            <div class="dropdown-group">
+              <h6>Academics</h6>
+              <a href="#">Academic Areas</a><a href="#">Academic Calendars</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Admission</h6>
+              <a href="#">Requirements</a><a href="#">Admission Process</a><a href="#">Tuition Fee</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Programs</h6>
+              <a href="sd.html">Software Development</a><a href="cw.html">Creative Writing</a><a href="arch.html">Architecture Design</a><a href="cine.html">Cinematography</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Student Services <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="#">Scholarships</a>
+          </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="applynow.html" class="nav-cta">Apply Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="breadcrumb reveal">
+      <a href="#">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <a href="#">Admissions</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span class="current">Apply Now</span>
+    </div>
+    <div class="section-label reveal reveal-delay-1">
+      <span>2026–27 Intake</span>
+    </div>
+    <h1 class="reveal reveal-delay-2">Begin Your <em>Journey</em><br>to Nova</h1>
+    <p style="color:rgba(255,255,255,.65);font-size:16px;margin-top:18px;max-width:520px;line-height:1.75;" class="reveal reveal-delay-3">Complete the application below. All fields marked with an asterisk are required. The process takes approximately 20–30 minutes.</p>
+  </div>
+</section>
+
+<!-- STEP NAV -->
+<div class="step-nav">
+  <div class="step-nav-inner">
+    <div class="step-item active" data-step="1">
+      <div class="step-num">1</div> Personal Information
+    </div>
+    <div class="step-item" data-step="2">
+      <div class="step-num">2</div> Academic Background
+    </div>
+    <div class="step-item" data-step="3">
+      <div class="step-num">3</div> Program Selection
+    </div>
+    <div class="step-item" data-step="4">
+      <div class="step-num">4</div> Documents & Essays
+    </div>
+    <div class="step-item" data-step="5">
+      <div class="step-num">5</div> Review & Submit
+    </div>
+  </div>
+</div>
+
+<!-- APPLY BODY -->
+<div class="apply-body">
+  <div class="container">
+    <div class="apply-grid">
+
+      <!-- MAIN FORM CARD -->
+      <div>
+        <div class="form-card">
+
+          <!-- STEP 1: Personal Info -->
+          <div class="form-step active" id="step-1">
+            <div class="form-card-head">
+              <div class="fch-icon"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <h2>Personal Information</h2>
+                <p>Tell us about yourself. Please use your legal name as it appears on official documents.</p>
+              </div>
+            </div>
+            <div class="form-card-body">
+
+              <div class="form-section-label">Basic Details</div>
+
+              <div class="field-row cols-3">
+                <div class="field-group">
+                  <label>Title</label>
+                  <select>
+                    <option value="">Select</option>
+                    <option>Mr.</option>
+                    <option>Ms.</option>
+                    <option>Mrs.</option>
+                    <option>Dr.</option>
+                    <option>Prefer not to say</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>First Name <span class="req">*</span></label>
+                  <input type="text" id="f-firstname" placeholder="e.g. James" required/>
+                </div>
+                <div class="field-group">
+                  <label>Last Name <span class="req">*</span></label>
+                  <input type="text" id="f-lastname" placeholder="e.g. Mitchell" required />
+                </div>
+              </div>
+
+              <div class="field-row cols-2">
+                <div class="field-group">
+                    <label>Date of Birth <span class="req">*</span></label>
+                    <input type="date" id="f-dob" required max="2009-12-31" />
+                </div>
+                <div class="field-group">
+                  <label>Gender</label>
+                  <select>
+                    <option value="">Prefer not to say</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Non-binary</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-section-label">Contact Information</div>
+
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>Email Address <span class="req">*</span></label>
+                  <input type="email" id="f-email" placeholder="your@email.com" required />
+                  <span class="field-hint">Use a personal email you check regularly.</span>
+                  <span class="error-msg">Please enter a valid email address.</span>
+                </div>
+                <div class="field-group">
+                  <label>Phone Number <span class="req">*</span></label>
+                  <input type="tel" placeholder="+1 (000) 000-0000" required pattern="\d{10}" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');"/>
+                  <span class="error-msg">Phone number must be exactly 10 digits.</span>
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field-group">
+                  <label>Residential Address <span class="req">*</span></label>
+                  <input type="text" placeholder="Street address, city, state, ZIP" required />
+                </div>
+              </div>
+
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>Country of Citizenship <span class="req">*</span></label>
+                  <select>
+                    <option value="">Select country</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>India</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Nationality <span class="req">*</span></label>
+                  <input type="text" id="f-nationality" placeholder="e.g. American" required />
+                </div>
+              </div>
+
+              <div class="form-section-label">Emergency Contact</div>
+              <div class="field-row cols-3">
+                <div class="field-group">
+                  <label>Full Name <span class="req">*</span></label>
+                  <input type="text" placeholder="Contact name" required />
+                </div>
+                <div class="field-group">
+                  <label>Relationship <span class="req">*</span></label>
+                  <select>
+                    <option value="">Select</option>
+                    <option>Parent</option>
+                    <option>Guardian</option>
+                    <option>Spouse</option>
+                    <option>Sibling</option>
+                    <option>Friend</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Phone <span class="req">*</span></label>
+                  <input type="tel" placeholder="+1 (000) 000-0000" required pattern="\d{10}" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');"/>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-footer">
+              <span class="step-counter">Step <strong>1</strong> of 5</span>
+              <button class="btn-next" onclick="goStep(2)">Continue <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Academic Background -->
+          <div class="form-step" id="step-2">
+            <div class="form-card-head">
+              <div class="fch-icon"><i class="fa-solid fa-book-open"></i></div>
+              <div>
+                <h2>Academic Background</h2>
+                <p>Provide your educational history, starting with the most recent institution.</p>
+              </div>
+            </div>
+            <div class="form-card-body">
+
+              <div class="form-section-label">Most Recent Institution</div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label>School / University Name <span class="req">*</span></label>
+                  <input type="text" id="f-institution" placeholder="e.g. Xyz High School / MIT" required />
+                </div>
+              </div>
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>Country <span class="req">*</span></label>
+                  <select>
+                    <option value="">Select country</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>India</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Qualification / Degree <span class="req">*</span></label>
+                  <select id="f-degree">
+                    <option value="">Select</option>
+                    <option>High School Diploma</option>
+                    <option>Bachelor's Degree</option>
+                    <option>Master's Degree</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>Field of Study <span class="req">*</span></label>
+                  <input type="text" placeholder="e.g. Commerce / Humanities / Science" required />
+                </div>
+                <div class="field-group">
+                  <label>Year of Graduation <span class="req">*</span></label>
+                  <select id="f-gradyear">
+                    <option value="">Select year</option>
+                    <option>2025</option><option>2024</option><option>2023</option><option>2022</option>
+                    <option>2021</option><option>2020</option><option>2019</option><option>2018</option>
+                    <option>Earlier</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>GPA / Grade <span class="req">*</span></label>
+                  <input type="text" id="f-gpa" placeholder="e.g. 3.8 / 4.0 or 80% or First Class" required />
+                </div>
+                <div class="field-group">
+                  <label>Grading Scale</label>
+                  <select>
+                    <option value="">Select</option>
+                    <option>4.0 Scale (US)</option>
+                    <option>Percentage</option>
+                    <option>UK Classification</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-section-label">Test Scores</div>
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>SAT Score</label>
+                  <input type="number" placeholder="e.g. 1450" min="400" max="1600" required />
+                  <span class="field-hint">Leave blank if not applicable.</span>
+                </div>
+                <div class="field-group">
+                  <label>JEE Rank</label>
+                  <input type="number" placeholder="e.g. 320000" min="1" max="360000000" required />
+                </div>
+              </div>
+
+              <div class="form-section-label">Extracurricular & Achievements</div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label>Honors, Awards & Distinctions</label>
+                  <textarea placeholder="List any academic honors, awards, scholarships, or notable achievements..."></textarea>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label>Extracurricular Activities</label>
+                  <textarea placeholder="Sports, clubs, volunteer work, student government, arts, etc..."></textarea>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-footer">
+              <button class="btn-back" onclick="goStep(1)"><i class="fa-solid fa-arrow-left"></i> Back</button>
+              <span class="step-counter">Step <strong>2</strong> of 5</span>
+              <button class="btn-next" onclick="goStep(3)">Continue <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Program Selection -->
+          <div class="form-step" id="step-3">
+            <div class="form-card-head">
+              <div class="fch-icon"><i class="fa-solid fa-compass"></i></div>
+              <div>
+                <h2>Program Selection</h2>
+                <p>Choose your preferred program and intake. You may select up to two preferences.</p>
+              </div>
+            </div>
+            <div class="form-card-body">
+
+              <div class="form-section-label">Degree Level</div>
+              <div class="radio-group inline" id="degree-level">
+                <label class="radio-opt selected">
+                  <input type="radio" name="degree" value="undergrad" checked /> Undergraduate
+                </label>
+                <label class="radio-opt">
+                  <input type="radio" name="degree" value="postgrad" /> Postgraduate
+                </label>
+              </div>
+
+              <div class="form-section-label">First Preference</div>
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>Faculty / School <span class="req">*</span></label>
+                  <select required id="f-faculty">
+                    <option value="">Select faculty</option>
+                    <option>Faculty of Arts & Humanities</option>
+                    <option>Faculty of Science & Engineering</option>
+                    <option>Faculty of Business & Economics</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Program <span class="req">*</span></label>
+                  <select required id="f-program">
+                    <option value="">Select program</option>
+                    <option>Software Development</option>
+                    <option>Creative Writing</option>
+                    <option>Cinematography</option>
+                    <option>Architecture</option>
+                    <option>Data Science</option>
+                    <option>Environmental Science</option>
+                    <option>Psychology</option>
+                    <option>Business Administration</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-section-label">Second Preference <span style="font-size:11px;color:var(--text-muted);text-transform:none;letter-spacing:0;font-family:'DM Sans',sans-serif;">(optional)</span></div>
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>Faculty / School</label>
+                  <select>
+                    <option value="">Select faculty</option>
+                    <option>Faculty of Arts & Humanities</option>
+                    <option>Faculty of Science & Engineering</option>
+                    <option>Faculty of Business & Economics</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Program</label>
+                  <select>
+                    <option value="">Select program</option>
+                    <option>Software Development</option>
+                    <option>Creative Writing</option>
+                    <option>Cinematography</option>
+                    <option>Architecture</option>
+                    <option>Data Science</option>
+                    <option>Environmental Science</option>
+                    <option>Psychology</option>
+                    <option>Business Administration</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-section-label">Intake & Study Mode</div>
+              <div class="field-row cols-2">
+                <div class="field-group">
+                  <label>Preferred Intake <span class="req">*</span></label>
+                  <select id="f-intake" required>
+                    <option value="">Select intake</option>
+                    <option>Fall 2026 (September)</option>
+                    <option>Spring 2026 (June)</option>
+                    <option>Winter 2027 (January)</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label>Study Mode <span class="req">*</span></label>
+                  <select id="f-mode" required>
+                    <option value="">Select</option>
+                    <option>Full-time (On-Campus)</option>
+                    <option>Part-time (On-Campus)</option>
+                    <option>Online</option>
+                    <option>Hybrid</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-section-label">Funding & Scholarship</div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label>How do you plan to fund your studies? <span class="req">*</span></label>
+                  <select required>
+                    <option value="">Select primary funding source</option>
+                    <option>Self-funded / Family</option>
+                    <option>Student Loan</option>
+                    <option>Employer Sponsorship</option>
+                    <option>Government Scholarship</option>
+                    <option>Nova Scholarship (applying)</option>
+                    <option>External Scholarship</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label>Are you applying for a Nova Scholarship?</label>
+                  <div class="radio-group inline" style="margin-top:6px;">
+                    <label class="radio-opt">
+                      <input type="radio" name="scholarship" value="yes" /> Yes, please consider me
+                    </label>
+                    <label class="radio-opt">
+                      <input type="radio" name="scholarship" value="no" checked /> No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-footer">
+              <button class="btn-back" onclick="goStep(2)"><i class="fa-solid fa-arrow-left"></i> Back</button>
+              <span class="step-counter">Step <strong>3</strong> of 5</span>
+              <button class="btn-next" onclick="goStep(4)">Continue <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Documents & Essays -->
+          <div class="form-step" id="step-4">
+            <div class="form-card-head">
+              <div class="fch-icon"><i class="fa-solid fa-file-lines"></i></div>
+              <div>
+                <h2>Documents </h2>
+                <p>Upload required documents. Accepted formats: PDF, DOC, JPG, PNG (max 5MB each).</p>
+              </div>
+            </div>
+            <div class="form-card-body">
+
+              <div class="form-section-label">Required Documents</div>
+
+              <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:28px;">
+                <label class="upload-area" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".pdf,.doc,.docx,.jpg,.png" />
+                  <i class="fa-solid fa-file-pdf"></i>
+                  <p><strong>Official Transcripts</strong></p>
+                  <span>All academic transcripts from secondary school and above</span>
+                </label>
+
+                <label class="upload-area" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".pdf,.jpg,.png" />
+                  <i class="fa-solid fa-id-card"></i>
+                  <p><strong>Passport / National ID</strong></p>
+                  <span>Clear scan of the photo page</span>
+                </label>
+
+                <label class="upload-area" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".pdf,.doc,.docx" />
+                  <i class="fa-solid fa-certificate"></i>
+                  <p><strong>English Proficiency Certificate</strong></p>
+                  <span>IELTS / TOEFL / Cambridge — required for non-native speakers</span>
+                </label>
+
+                <label class="upload-area" onclick="this.querySelector('input').click()">
+                  <input type="file" accept=".pdf,.doc,.docx,.jpg,.png" multiple />
+                  <i class="fa-solid fa-paperclip"></i>
+                  <p><strong>Additional Documents</strong> <span style="font-weight:400;">(optional)</span></p>
+                  <span>Awards, publications, portfolios, letters of recommendation</span>
+                </label>
+              </div>
+              <p style="font-size:13px;color:var(--text-muted);margin-top:-8px;line-height:1.7;">Referees will receive an automated email request to submit their recommendation directly. References must be submitted within 14 days of your application.</p>
+
+            </div>
+            <div class="form-footer">
+              <button class="btn-back" onclick="goStep(3)"><i class="fa-solid fa-arrow-left"></i> Back</button>
+              <span class="step-counter">Step <strong>4</strong> of 5</span>
+              <button class="btn-next" onclick="goStep(5)">Review Application <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- STEP 5: Review & Submit -->
+          <div class="form-step" id="step-5">
+            <div class="form-card-head">
+              <div class="fch-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h2>Review & Submit</h2>
+                <p>Please review your information carefully before submitting. You cannot edit your application after submission.</p>
+              </div>
+            </div>
+            <div class="form-card-body">
+
+              <!-- Summary blocks -->
+              <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:32px;">
+
+                <div style="background:var(--off-white);border-radius:8px;border:1px solid var(--light-gray);overflow:hidden;">
+                  <div style="padding:14px 22px;background:var(--navy);display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:#fff;">Personal Information</span>
+                    <button onclick="goStep(1)" style="background:none;border:none;color:var(--gold);font-size:13px;cursor:pointer;font-family:inherit;font-weight:600;"><i class="fa-solid fa-pen" style="margin-right:6px;"></i>Edit</button>
+                  </div>
+                  <div style="padding:18px 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;">
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Full Name</span><strong id="r-fullname" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Date of Birth</span><strong id="r-dob" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Email</span><strong id="r-email" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Nationality</span><strong id="r-nationality" style="font-size:14px;color:var(--navy);">—</strong></div>
+                  </div>
+                </div>
+
+                <div style="background:var(--off-white);border-radius:8px;border:1px solid var(--light-gray);overflow:hidden;">
+                  <div style="padding:14px 22px;background:var(--navy);display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:#fff;">Academic Background</span>
+                    <button onclick="goStep(2)" style="background:none;border:none;color:var(--gold);font-size:13px;cursor:pointer;font-family:inherit;font-weight:600;"><i class="fa-solid fa-pen" style="margin-right:6px;"></i>Edit</button>
+                  </div>
+                  <div style="padding:18px 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;">
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Institution</span><strong id="r-institution" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Degree</span><strong id="r-degree" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">GPA</span><strong id="r-gpa" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Graduated</span><strong id="r-gradyear" style="font-size:14px;color:var(--navy);">—</strong></div>
+                  </div>
+                </div>
+
+                <div style="background:var(--off-white);border-radius:8px;border:1px solid var(--light-gray);overflow:hidden;">
+                  <div style="padding:14px 22px;background:var(--navy);display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:#fff;">Program Selected</span>
+                    <button onclick="goStep(3)" style="background:none;border:none;color:var(--gold);font-size:13px;cursor:pointer;font-family:inherit;font-weight:600;"><i class="fa-solid fa-pen" style="margin-right:6px;"></i>Edit</button>
+                  </div>
+                  <div style="padding:18px 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;">
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Program</span><strong id="r-program" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Level</span><strong id="r-level" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Intake</span><strong id="r-intake" style="font-size:14px;color:var(--navy);">—</strong></div>
+                    <div><span style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:2px;">Mode</span><strong id="r-mode" style="font-size:14px;color:var(--navy);">—</strong></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Declarations -->
+              <div class="form-section-label">Declarations</div>
+              <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:28px;">
+                <label class="consent-box">
+                  <input type="checkbox" />
+                  <p>I confirm that all information provided in this application is accurate and complete. I understand that providing false or misleading information may result in the withdrawal of any offer of admission. <a href="#">View full policy →</a></p>
+                </label>
+                <label class="consent-box">
+                  <input type="checkbox" />
+                  <p>I have read and agree to Nova University's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>. I consent to the university contacting me regarding my application and related academic matters.</p>
+                </label>
+                <label class="consent-box">
+                  <input type="checkbox" />
+                  <p>I understand that submitting this application does not guarantee admission. All applications are subject to review by the Admissions Committee.</p>
+                </label>
+              </div>
+
+              <!-- Application fee notice -->
+              <div style="background:rgba(201,168,76,.08);border:1.5px solid rgba(201,168,76,.3);border-radius:6px;padding:18px 22px;display:flex;gap:14px;align-items:flex-start;">
+                <i class="fa-solid fa-circle-info" style="color:var(--gold);font-size:18px;margin-top:2px;flex-shrink:0;"></i>
+                <div>
+                  <strong style="font-size:14px;color:var(--navy);display:block;margin-bottom:4px;">Application Fee: $75 USD</strong>
+                  <p style="font-size:13px;color:var(--text-muted);margin:0;line-height:1.7;">A non-refundable application fee of $75 is due upon submission. You will be redirected to our secure payment portal. Fee waivers are available — <a href="#" style="color:var(--blue-mid);">learn more</a>.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-footer">
+              <button class="btn-back" onclick="goStep(4)"><i class="fa-solid fa-arrow-left"></i> Back</button>
+              <span class="step-counter">Step <strong>5</strong> of 5</span>
+              <button class="btn-submit" onclick="submitApp()"><i class="fa-solid fa-paper-plane"></i> Submit Application</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS STATE -->
+          <div class="success-state" id="success-state">
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h2>Application Submitted!</h2>
+            <p>Thank you for applying to Nova University. Your application has been received and is now under review. You will receive a confirmation email within 24 hours.</p>
+            <div class="success-ref">Reference: NU-2026-084921</div>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+              <a href="#" class="btn-primary"><i class="fa-solid fa-download"></i> Download Confirmation</a>
+              <a href="index.html" class="btn-outline" style="color:var(--navy);border-color:var(--light-gray);"><i class="fa-solid fa-home"></i> Return to Homepage</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="apply-sidebar">
+
+        <!-- Deadline widget -->
+        <div class="deadline-widget">
+          <div class="dw-label">Important Dates</div>
+          <h4>Application Deadlines</h4>
+          <ul class="deadline-list">
+            <li>
+              <span>Early Decision (Fall '26)</span>
+              <span class="deadline-tag urgent">May 25</span>
+            </li>
+            <li>
+              <span>Regular Decision (Spring '27)</span>
+              <span class="deadline-tag">March 1</span>
+            </li>
+            <li>
+              <span>Fall 2026 Intake</span>
+              <span class="deadline-tag">September 15</span>
+            </li>
+            <li>
+              <span>Scholarship Applications 2026</span>
+              <span class="deadline-tag urgent">June 1</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Info widget -->
+        <div class="info-widget">
+          <div class="iw-head">Application <span>Checklist</span></div>
+          <div class="iw-body">
+            <div class="iw-row">
+              <div class="iw-icon"><i class="fa-solid fa-file-lines"></i></div>
+              <div class="iw-text">
+                <h6>Official Transcripts</h6>
+                <p>All institutions attended, certified copies</p>
+              </div>
+            </div>
+            <div class="iw-row">
+              <div class="iw-icon"><i class="fa-solid fa-id-card"></i></div>
+              <div class="iw-text">
+                <h6>Government ID / Passport</h6>
+                <p>Valid, full-colour scan of photo page</p>
+              </div>
+            </div>
+            <div class="iw-row">
+              <div class="iw-icon"><i class="fa-solid fa-language"></i></div>
+              <div class="iw-text">
+                <h6>English Test Results</h6>
+                <p>IELTS 6.5+ / TOEFL 88+ (non-native speakers)</p>
+              </div>
+            </div>
+            <div class="iw-row">
+              <div class="iw-icon"><i class="fa-solid fa-credit-card"></i></div>
+              <div class="iw-text">
+                <h6>Application Fee</h6>
+                <p>$75 USD, paid on submission</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help widget -->
+        <div class="help-widget">
+          <h5>Need Help?</h5>
+          <p>Our admissions team is available Monday–Friday, 9am–5pm EST to answer your questions.</p>
+          <div class="help-actions">
+            <a href="mailto:admissions@university.edu" class="help-btn primary"><i class="fa-solid fa-envelope"></i> Email Admissions</a>
+            <a href="tel:+91 8888888888" class="help-btn secondary"><i class="fa-solid fa-phone"></i> Call Us</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span><i class="fa-solid fa-star"></i> World-Class Faculty</span>
+    <span><i class="fa-solid fa-globe"></i> 120+ Nationalities</span>
+    <span><i class="fa-solid fa-award"></i> Top 50 Globally Ranked</span>
+    <span><i class="fa-solid fa-briefcase"></i> 96% Graduate Employment</span>
+    <span><i class="fa-solid fa-flask"></i> $2.4B Research Funding</span>
+    <span><i class="fa-solid fa-handshake"></i> 500+ Industry Partners</span>
+    <span><i class="fa-solid fa-star"></i> World-Class Faculty</span>
+    <span><i class="fa-solid fa-globe"></i> 120+ Nationalities</span>
+    <span><i class="fa-solid fa-award"></i> Top 50 Globally Ranked</span>
+    <span><i class="fa-solid fa-briefcase"></i> 96% Graduate Employment</span>
+    <span><i class="fa-solid fa-flask"></i> $2.4B Research Funding</span>
+    <span><i class="fa-solid fa-handshake"></i> 500+ Industry Partners</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="logo-text">
+              <span>University of Nova</span>
+              <span>excellence redefined daily</span>
+            </div>
+        </a>
+        <p>Shaping tomorrow's leaders through world-class education, groundbreaking research, and a commitment to global impact since 1892.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+       <div class="footer-col">
+          <h6>Our Campus</h6>
+          <ul>
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">Athletics</a></li>
+            <li><a href="#">Campus Life</a></li>
+            <li><a href="#">Academic Area</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Pages</h6>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tuition Fee</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Faculty Staff</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h6>Quick Links</h6>
+          <ul>
+            <li><a href="#">Apply Now</a></li>
+            <li><a href="#">Scholarships</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>Copyright &copy; 2026. All Rights Reserved by <a href="#">Nova University</a></span>
+        <span>Designed by Gargee & Kaustuva for academic excellence</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/applynow.js"></script>
+
+</body>
+</html>
