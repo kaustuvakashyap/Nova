@@ -1,41 +1,98 @@
 /* ========== SCHOLARSHIPS SPECIFIC ========== */
 
-/* Header alignment: Left-aligned with heavy padding */
 .page-header {
-  padding: 160px 0 100px;
+  padding: 80px 0 70px;
   background: var(--navy-deep); 
-  text-align: left; /* Alignment fix */
+  text-align: left;
+  position: relative;
+  overflow: hidden;
 }
 
-.header-content { max-width: 800px; margin: 0 auto; }
-.header-content p { color: rgba(255,255,255,0.7); font-size: 18px; line-height: 1.6; }
-.header-content h1 em { 
-  font-style: italic; 
-  color: var(--gold-light); 
+.header-content { 
+  max-width: 800px; 
+  position: relative;
+  z-index: 2;
 }
 
-.breadcrumbs {
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
   font-size: 13px;
   color: rgba(255,255,255,0.5);
-  margin-bottom: 40px;
+  font-family: 'DM Sans', sans-serif;
 }
-
-.breadcrumbs span { color: var(--gold-light); }
-.breadcrumbs i { font-size: 10px; margin: 0 10px; }
+.breadcrumb a {
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.breadcrumb a:hover { color: var(--gold-light); }
+.breadcrumb i { font-size: 10px; color: rgba(255,255,255,0.3); }
+.breadcrumb span { color: var(--gold-light); }
 
 .page-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(60px, 8vw, 100px); /* Massive editorial type */
-  line-height: 0.9;
+  font-size: clamp(52px, 7vw, 88px);
+  line-height: 0.92;
   color: #fff;
   font-weight: 700;
+  margin-bottom: 22px;
 }
 
 .gold-italic {
-  display: block; /* Forces it to the next line like your screenshot */
   font-style: italic;
   color: var(--gold-light);
-  font-family: 'Playfair Display', serif;
+}
+
+.header-content p { 
+  color: rgba(255,255,255,0.65); 
+  font-size: 17px; 
+  line-height: 1.65; 
+  max-width: 560px;
+}
+
+/* ========== GOLD TICKER BAR ========== */
+.ticker-bar {
+  background: var(--gold, #c9a84c);
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-track {
+  display: inline-flex;
+  align-items: center;
+  animation: ticker-scroll 30s linear infinite;
+  gap: 0;
+}
+
+.ticker-track span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 36px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--navy-deep, #0e1a3a);
+}
+
+.ticker-track span i {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /* The "Intro Card" with the gold left border */
@@ -44,9 +101,10 @@
 .intro-card {
   background: var(--off-white);
   padding: 40px 60px;
-  border-left: 4px solid var(--gold); /* The signature left border */
+  border-left: 4px solid var(--gold);
   max-width: 900px;
-  margin-top: -60px; /* Overlaps into the hero slightly */
+  position: relative;
+  z-index: 10;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   border-radius: 4px;
 }
@@ -65,7 +123,7 @@
 }
 
 /* Award Cards */
-.scholarship-list { padding: 100px 0; background: var(--off-white); }
+.scholarship-list { padding: 100px 0; background: #fff; }
 .scholarship-grid { 
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
@@ -102,7 +160,7 @@
 .award-details i { color: var(--gold); font-size: 12px; }
 
 /* Application Process Section */
-.process-section { padding-bottom: 100px; background: var(--off-white); }
+.process-section { padding-bottom: 100px; background: #fff; }
 .process-bg {
   background: var(--navy);
   border-radius: 12px;
@@ -126,11 +184,42 @@
 @media (max-width: 768px) {
   .scholarship-grid { grid-template-columns: 1fr; }
   .process-text { padding: 40px 20px; }
+  .about-grid { grid-template-columns: 1fr; }
 }
 
 /* ========== CTA BANNER ========== */
-.cta-banner { padding: 90px 0; background: linear-gradient(135deg, var(--navy-deep) 0%, var(--blue) 100%); position: relative; overflow: hidden; text-align: center; }
-.cta-banner::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
-.cta-banner h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(38px, 5vw, 64px); font-weight: 700; color: #fff; margin-bottom: 16px; }
-.cta-banner p { font-size: 16px; color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto 36px; line-height: 1.75; }
-.cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-banner { 
+  padding: 90px 0; background: 
+  linear-gradient(135deg, var(--navy-deep) 0%, var(--blue) 100%); 
+  position: relative; 
+  overflow: hidden; 
+  text-align: center; 
+}
+
+.cta-banner::before { 
+  content: ''; 
+  position: absolute; 
+  inset: 0; 
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+}
+.cta-banner h2 { 
+  font-family: 'Cormorant Garamond', serif; 
+  font-size: clamp(38px, 5vw, 64px); 
+  font-weight: 700; color: #fff; 
+  margin-bottom: 16px; 
+}
+
+.cta-banner p { 
+  font-size: 16px; 
+  color: rgba(255,255,255,0.65); 
+  max-width: 500px; 
+  margin: 0 auto 36px; 
+  line-height: 1.75; 
+}
+
+.cta-btns { 
+  display: flex; 
+  gap: 16px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
