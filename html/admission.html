@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission | University of Nova</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/admission.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="tel:+1800123456"><i class="fa-solid fa-phone"></i> +1 (800) 123-4567</a>
+      <div class="tb-divider"></div>
+      <a href="mailto:admissionsnova@university.edu"><i class="fa-solid fa-envelope"></i> admissionsnova@university.edu</a>
+      <div class="tb-divider"></div>
+      <a href="#"><i class="fa-solid fa-clock"></i> Mon–Fri, 9am–5pm</a>
+    </div>
+    <div class="top-bar-right">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <div class="tb-sep"></div>
+      <select class="lang-select"><option>ENG</option></select>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="logo-text">
+          <span>University of Nova</span>
+          <span> excellence redefined daily </span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <button class="nav-close" id="navClose"><i class="fa fa-times"></i></button>
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="#">About Us</a><a href="#">Faculty</a><a href="#">Events</a>
+            <a href="#">Campus Life</a><a href="#">Alumni</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Academics <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown mega">
+            <div class="dropdown-group">
+              <h6>Academics</h6>
+              <a href="#">Academic Areas</a><a href="#">Academic Calendars</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Admission</h6>
+              <a href="admission.html#requirements">Requirements</a>
+              <a href="admission.html#process">Admission Process</a>
+              <a href="admission.html#tuition">Tuition Fee</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Programs</h6>
+              <a href="../html/programs/sd.html">Software Development</a><a href="../html/programs/cw.html">Creative Writing</a><a href="../html/programs/arch.html">Architecture Design</a><a href="../html/programs/cine.html">Cinematography</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Student Services <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="../html/studentservices/scholarship.html">Scholarships</a>
+          </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="../html/applynow.html" class="nav-cta">Apply Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <div class="header-content reveal">
+      <nav class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <i class="fa fa-chevron-right"></i>
+        <a href="#">Academics</a>
+        <i class="fa fa-chevron-right"></i>
+        <span>Admission</span>
+      </nav>
+      <h1 class="page-title">Your Path to <br><span class="gold-italic">Nova Begins Here</span></h1>
+      <p>Everything you need to know about joining one of the most dynamic academic communities in the world — requirements, process, and what it costs to study at Nova.</p>
+      <div class="header-anchors">
+        <a href="#requirements" class="anchor-pill"><i class="fa fa-file-alt"></i> Requirements</a>
+        <a href="#process" class="anchor-pill"><i class="fa fa-list-ol"></i> Process</a>
+        <a href="#tuition" class="anchor-pill"><i class="fa fa-coins"></i> Tuition Fees</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-deco">
+    <span>A</span><span>D</span><span>M</span><span>I</span><span>T</span>
+  </div>
+</section>
+
+<!-- GOLD TICKER BAR -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <span><i class="fa-solid fa-calendar-check"></i> APPLICATIONS OPEN 2026</span>
+    <span><i class="fa-solid fa-clock"></i> DEADLINE: JULY 31, 2026</span>
+    <span><i class="fa-solid fa-users"></i> 4,200+ ENROLLED STUDENTS</span>
+    <span><i class="fa-solid fa-earth-americas"></i> 60+ NATIONALITIES</span>
+    <span><i class="fa-solid fa-graduation-cap"></i> 95% GRADUATE EMPLOYMENT</span>
+    <span><i class="fa-solid fa-trophy"></i> WORLD-CLASS FACULTY</span>
+    <span><i class="fa-solid fa-calendar-check"></i> APPLICATIONS OPEN 2026</span>
+    <span><i class="fa-solid fa-clock"></i> DEADLINE: JULY 31, 2026</span>
+    <span><i class="fa-solid fa-users"></i> 4,200+ ENROLLED STUDENTS</span>
+    <span><i class="fa-solid fa-earth-americas"></i> 60+ NATIONALITIES</span>
+    <span><i class="fa-solid fa-graduation-cap"></i> 95% GRADUATE EMPLOYMENT</span>
+    <span><i class="fa-solid fa-trophy"></i> WORLD-CLASS FACULTY</span>
+  </div>
+</div>
+
+<!-- ===================== REQUIREMENTS ===================== -->
+<section class="adm-section" id="requirements">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-header-left">
+        <div class="section-label">Step One</div>
+        <h2 class="section-title">Admission <em>Requirements</em></h2>
+      </div>
+      <p class="section-sub">Before applying, ensure you have the following documents ready. All submissions are made digitally through our secure student portal.</p>
+    </div>
+
+    <!-- Eligibility strip -->
+    <div class="eligibility-strip reveal">
+      <div class="elig-item">
+        <i class="fa-solid fa-user-graduate"></i>
+        <div>
+          <strong>Undergraduate</strong>
+          <span>Secondary school certificate or equivalent</span>
+        </div>
+      </div>
+      <div class="elig-divider"></div>
+      <div class="elig-item">
+        <i class="fa-solid fa-microscope"></i>
+        <div>
+          <strong>Postgraduate</strong>
+          <span>Accredited bachelor's degree (min. 2.5 GPA)</span>
+        </div>
+      </div>
+      <div class="elig-divider"></div>
+      <div class="elig-item">
+        <i class="fa-solid fa-globe"></i>
+        <div>
+          <strong>International</strong>
+          <span>Equivalent qualifications with certified translation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Documents grid -->
+    <div class="doc-grid">
+      <div class="doc-card reveal">
+        <div class="doc-number">01</div>
+        <div class="doc-icon"><i class="fa-solid fa-scroll"></i></div>
+        <h4>Official Transcripts</h4>
+        <p>All academic transcripts from secondary school and above. Documents must be certified copies issued directly by the institution, bearing an official seal or stamp.</p>
+        <div class="doc-note"><i class="fa fa-info-circle"></i> Must be submitted in English or with a certified translation</div>
+      </div>
+
+      <div class="doc-card reveal reveal-delay-1">
+        <div class="doc-number">02</div>
+        <div class="doc-icon"><i class="fa-solid fa-id-card"></i></div>
+        <h4>Passport / National ID</h4>
+        <p>A clear, high-resolution scan of the photo/bio-data page of your valid passport or government-issued national identity document. Expired documents will not be accepted.</p>
+        <div class="doc-note"><i class="fa fa-info-circle"></i> File must be in PDF, JPG, or PNG format (min. 300 dpi)</div>
+      </div>
+
+      <div class="doc-card reveal reveal-delay-2">
+        <div class="doc-number">03</div>
+        <div class="doc-icon"><i class="fa-solid fa-language"></i></div>
+        <h4>English Proficiency Certificate</h4>
+        <p>Required for all non-native English speakers. Accepted tests: IELTS (min. 6.5 overall), TOEFL iBT (min. 85), or Cambridge C1 Advanced / C2 Proficiency. Must be within 2 years.</p>
+        <div class="doc-note"><i class="fa fa-info-circle"></i> Native speakers or those from English-medium schools may be exempt</div>
+      </div>
+
+      <div class="doc-card reveal reveal-delay-1">
+        <div class="doc-number">04</div>
+        <div class="doc-icon"><i class="fa-solid fa-folder-open"></i></div>
+        <h4>Additional Documents</h4>
+        <p>Supporting materials that strengthen your application — academic awards, published works, creative portfolios, or letters of recommendation from teachers, employers, or mentors.</p>
+        <div class="doc-note"><i class="fa fa-info-circle"></i> Up to 5 supporting documents; portfolio max 20MB</div>
+      </div>
+
+      <div class="doc-card reveal reveal-delay-1">
+        <div class="doc-number">06</div>
+        <div class="doc-icon"><i class="fa-solid fa-receipt"></i></div>
+        <h4>Application Fee Receipt</h4>
+        <p>Proof of payment for the non-refundable application processing fee. Fee waivers are available for students applying under financial hardship — contact our admissions office.</p>
+        <div class="doc-note"><i class="fa fa-info-circle"></i> Domestic: $50 | International: $75</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="adm-section process-section-adm" id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <div class="process-header-left">
+        <div class="section-label process-label">Step Two</div>
+        <h2 class="section-title process-title">The Admission <em>Process</em></h2>
+      </div>
+      <div class="process-header-right">
+        <p class="section-sub process-sub">A clear, structured pathway from your first click to your first day on campus. Our team supports you at every stage.</p>
+      </div>
+    </div>
+ 
+    <div class="process-accordion">
+    
+        <div class="pa-item open reveal">
+            <button class="pa-header" onclick="toggleAccordion(this)">
+            <div class="pa-header-left">
+                <span class="pa-num">01</span>
+                <span class="pa-tag">Online · ~15 min</span>
+                <h4>Create Your Portal Account</h4>
+            </div>
+            <div class="pa-icon"><i class="fa fa-minus"></i></div>
+            </button>
+            <div class="pa-body">
+            <p>Register on the Nova Student Portal using a valid email address. You'll receive a confirmation link to activate your account and access the application dashboard.</p>
+            <a href="applynow.html" class="tl-btn">Go to Portal <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    
+        <div class="pa-item reveal">
+            <button class="pa-header" onclick="toggleAccordion(this)">
+            <div class="pa-header-left">
+                <span class="pa-num">02</span>
+                <span class="pa-tag">Digital Upload · Before deadline</span>
+                <h4>Submit Your Application & Documents</h4>
+            </div>
+            <div class="pa-icon"><i class="fa fa-plus"></i></div>
+            </button>
+            <div class="pa-body">
+            <p>Fill out the online application form and upload all required documents. Ensure all files meet our format and size specifications. Incomplete applications will not be reviewed.</p>
+            </div>
+        </div>
+    
+        <div class="pa-item reveal">
+            <button class="pa-header" onclick="toggleAccordion(this)">
+            <div class="pa-header-left">
+                <span class="pa-num">03</span>
+                <span class="pa-tag">Internal · 4–6 weeks</span>
+                <h4>Initial Review by Admissions Panel</h4>
+            </div>
+            <div class="pa-icon"><i class="fa fa-plus"></i></div>
+            </button>
+            <div class="pa-body">
+            <p>Our academic committee evaluates your application against program-specific criteria. You'll receive an email acknowledging receipt within 3 business days of submission.</p>
+            </div>
+        </div>
+    
+        <div class="pa-item reveal">
+            <button class="pa-header" onclick="toggleAccordion(this)">
+            <div class="pa-header-left">
+                <span class="pa-num">04</span>
+                <span class="pa-tag">Virtual / In-Person · 30–45 min</span>
+                <h4>Interview (Shortlisted Applicants)</h4>
+            </div>
+            <div class="pa-icon"><i class="fa fa-plus"></i></div>
+            </button>
+            <div class="pa-body">
+            <p>Select programs require a personal interview with faculty members. Shortlisted candidates are notified by email and given a scheduling link for a time that suits them.</p>
+            </div>
+        </div>
+    
+        <div class="pa-item reveal">
+            <button class="pa-header" onclick="toggleAccordion(this)">
+            <div class="pa-header-left">
+                <span class="pa-num">05</span>
+                <span class="pa-tag">Decision · Via email & portal</span>
+                <h4>Offer Letter Issued</h4>
+            </div>
+            <div class="pa-icon"><i class="fa fa-plus"></i></div>
+            </button>
+            <div class="pa-body">
+            <p>Successful applicants receive a formal offer letter via email and through the portal. You'll have 21 days to accept your offer and pay the enrollment deposit to secure your place.</p>
+            </div>
+        </div>
+    
+        <div class="pa-item reveal">
+            <button class="pa-header" onclick="toggleAccordion(this)">
+            <div class="pa-header-left">
+                <span class="pa-num">06</span>
+                <span class="pa-tag">Onboarding · Before semester start</span>
+                <h4>Enrollment & Orientation</h4>
+            </div>
+            <div class="pa-icon"><i class="fa fa-plus"></i></div>
+            </button>
+            <div class="pa-body">
+            <p>Complete your enrollment formalities, receive your student ID, select your modules, and attend Nova's Welcome Week — your launchpad into campus life.</p>
+            </div>
+        </div>
+    
+        </div>
+
+    <!-- Key dates strip -->
+    <div class="dates-strip reveal">
+      <div class="date-item">
+        <span class="date-val">Mar 1</span>
+        <span class="date-label">Applications Open</span>
+      </div>
+      <div class="date-sep">→</div>
+      <div class="date-item">
+        <span class="date-val">Jul 31</span>
+        <span class="date-label">Application Deadline</span>
+      </div>
+      <div class="date-sep">→</div>
+      <div class="date-item">
+        <span class="date-val">Sep 15</span>
+        <span class="date-label">Offers Issued</span>
+      </div>
+      <div class="date-sep">→</div>
+      <div class="date-item">
+        <span class="date-val">Oct 6</span>
+        <span class="date-label">Semester Begins</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TUITION FEES ===================== -->
+<section class="adm-section" id="tuition">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-header-left">
+        <div class="section-label">Step Three</div>
+        <h2 class="section-title">Tuition & <em>Fees</em></h2>
+      </div>
+      <p class="section-sub">Transparent, competitive pricing for world-class education. All fees listed are annual unless otherwise stated. Payment plans are available.</p>
+    </div>
+
+    <div class="tuition-table-wrap reveal">
+        <h4 class="tuition-table-title">Program Tuition Fees</h4>
+    <table class="tuition-table">
+        <thead>
+        <tr>
+            <th>Program Level</th>
+            <th>Tuition (Annual)</th>
+            <th>What's Included</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+            <div class="tt-level">Undergraduate</div>
+            <div class="tt-name">Bachelor's Programs</div>
+            </td>
+            <td class="tt-price">from $12,400</td>
+            <td class="tt-includes">Lectures & seminars · Library & digital resources · Student portal · Campus sports & wellness</td>
+            <td><a href="applynow.html" class="btn-primary tt-btn">Apply</a></td>
+        </tr>
+        <tr>
+            <td>
+            <div class="tt-level">Postgraduate</div>
+            <div class="tt-name">Master's Programs</div>
+            </td>
+            <td class="tt-price">from $16,800</td>
+            <td class="tt-includes">Everything in Undergraduate · Research lab access</td>
+            <td><a href="applynow.html" class="btn-primary tt-btn">Apply</a></td>
+        </tr>
+        <tr>
+            <td>
+            <div class="tt-level">Doctoral</div>
+            <div class="tt-name">PhD Programs</div>
+            </td>
+            <td class="tt-price">from $9,600</td>
+            <td class="tt-includes">Full research supervision · Research lab access · Conference travel fund · Teaching assistant opportunity</td>
+            <td><a href="applynow.html" class="btn-primary tt-btn">Apply</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="fees-note" style="margin-top:16px;"><i class="fa fa-circle-info"></i> All fees are annual. Scholarship and financial aid offsets may significantly reduce total cost. <a href="scholarship.html">View Scholarships →</a></p>
+    </div>
+
+    <!-- Additional fees table -->
+    <div class="fees-table-wrap reveal">
+      <h4 class="fees-table-title">Additional Fees & Costs</h4>
+      <table class="fees-table">
+        <thead>
+          <tr>
+            <th>Fee Type</th>
+            <th>Domestic</th>
+            <th>International</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Application Processing</td>
+            <td>$50</td>
+            <td>$75</td>
+            <td>Non-refundable, one-time</td>
+          </tr>
+          <tr>
+            <td>Enrollment Deposit</td>
+            <td>$500</td>
+            <td>$750</td>
+            <td>Credited toward first semester</td>
+          </tr>
+          <tr>
+            <td>Student Union Fee</td>
+            <td>$180</td>
+            <td>$180</td>
+            <td>Annual, mandatory</td>
+          </tr>
+          <tr>
+            <td>Health & Wellness</td>
+            <td>$220</td>
+            <td>$420</td>
+            <td>Includes basic medical coverage</td>
+          </tr>
+          <tr>
+            <td>On-Campus Housing</td>
+            <td>$4,200–$7,800</td>
+            <td>$4,200–$7,800</td>
+            <td>Annual, subject to availability</td>
+          </tr>
+          <tr>
+            <td>Meal Plan (Optional)</td>
+            <td>$1,800</td>
+            <td>$1,800</td>
+            <td>Annual, various tiers available</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="fees-note"><i class="fa fa-circle-info"></i> Fees are subject to annual review. Financial aid and scholarship offsets may reduce total cost significantly. <a href="../html/studentservices/scholarship.html">View Scholarships →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq-section">
+  <div class="container">
+    <div class="faq-inner">
+      <div class="faq-left reveal">
+        <div class="section-label">Got Questions?</div>
+        <h2 class="section-title">Frequently <em>Asked</em></h2>
+        <p>Can't find what you're looking for? Our admissions team is happy to help.</p>
+        <a href="#" class="btn-primary" style="margin-top:24px;display:inline-flex;">Contact Admissions <i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="faq-right">
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I apply to more than one program?
+            <i class="fa fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes — you may apply to up to two programs simultaneously using a single application fee. If offered places in both, you'll choose one before enrollment.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is there an age requirement for admission?
+            <i class="fa fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-a">
+            <p>There is no upper age limit. Undergraduate applicants must typically be 17 or older by the start of the academic year. Mature students are actively encouraged to apply.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What if my documents are not in English?
+            <i class="fa fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-a">
+            <p>All non-English documents must be accompanied by a certified translation. We accept translations from recognized translation agencies or government-certified translators.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I defer my offer to the following year?
+            <i class="fa fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-a">
+            <p>Deferrals are granted on a case-by-case basis and must be requested within 14 days of receiving your offer. A deferral fee of $150 applies. Scholarships may not carry over.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Are payment plans available for tuition?
+            <i class="fa fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes. Nova offers semester-based and monthly payment plans with no interest. Students may also apply for institutional loans through the Financial Aid office after enrollment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="section-label reveal" style="justify-content:center;color:var(--gold-light)">Ready to Apply?</div>
+    <h2 class="reveal">Take the First Step Toward<br><em style="font-style:italic;color:var(--gold-light)">Your Nova Future</em></h2>
+    <p class="reveal">Applications for the 2026–27 academic year are now open. Seats are limited — begin your journey today.</p>
+    <div class="cta-btns reveal">
+      <a href="../html/applynow.html" class="btn-primary">Apply Now <i class="fa fa-arrow-right"></i></a>
+      <a href="../html/studentservices/scholarship.html" class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.3);">View Scholarships <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" style="padding:0;margin-bottom:4px;">
+          <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="logo-text">
+            <span>University of Nova</span>
+            <span>excellence redefined daily</span>
+          </div>
+        </a>
+        <p>We are passionate about education, dedicated to providing high-quality resources for learners from all backgrounds and walks of life.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h6>Our Campus</h6>
+        <ul>
+          <li><a href="#">Academic</a></li>
+          <li><a href="#">Athletics</a></li>
+          <li><a href="#">Campus Life</a></li>
+          <li><a href="#">Academic Area</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Pages</h6>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="../html/admission.html">Admission</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">Faculty Staff</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="../html/applynow.html">Apply Now</a></li>
+          <li><a href="../html/studentservices/scholarship.html">Scholarships</a></li>
+          <li><a href="../html/admission.html#requirements">Requirements</a></li>
+          <li><a href="../html/admission.html#tuition">Tuition Fees</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026. All Rights Reserved by Nova University</span>
+      <span>Designed by Gargee & Kaustuva for academic excellence</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/admission.js"></script>
+</body>
+</html>
