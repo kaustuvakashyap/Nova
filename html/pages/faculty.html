@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../../css/faculty.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faculty & Staff — University of Nova</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="#"><i class="fa-solid fa-phone"></i> +91 7865498765 NOVA-EDU</a>
+      <a href="#"><i class="fa-solid fa-location-dot"></i> Nova Campus, Main Avenue</a>
+    </div>
+    <div class="top-bar-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <select class="lang-select">
+        <option>ENG</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../../index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="logo-text">
+          <span>University of Nova</span>
+          <span>excellence redefined daily</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <button class="nav-close" id="navClose"><i class="fa fa-times"></i></button>
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="about.html">About Us</a><a href="faculty.html" style="color:var(--gold-light)">Faculty</a><a href="events.html">Events</a>
+           <a href="campus.html">Campus Life</a><a href="alumni.html">Alumni</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Academics <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown mega">
+            <div class="dropdown-group">
+              <h6>Academics</h6>
+              <a href="../academic/academic-areas.html">Academic Areas</a><a href="../academic/calendar.html">Academic Calendar</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Admission</h6>
+              <a href="../admission.html#requirements">Requirements</a>
+              <a href="../admission.html#process">Admission Process</a>
+              <a href="../admission.html#tuition">Tuition Fee</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Programs</h6>
+              <a href="../programs/sd.html">Software Development</a><a href="../programs/cw.html">Creative Writing</a><a href="../programs/arch.html">Architecture Design</a><a href="../programs/cine.html">Cinematography</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Student Services <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="../studentservices/scholarship.html">Scholarships</a>
+          </div>
+        </li>
+        <li><a href="../Contact.html">Contact</a></li>
+        <li><a href="../applynow.html" class="nav-cta">Apply Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1561089489-f13d5e730d72" alt="Faculty">
+  </div>
+  <div class="page-hero-deco">Faculty</div>
+  <div class="container">
+    <div class="page-hero-content">
+      <ul class="breadcrumb">
+        <li>Home</li>
+        <li>Pages</li>
+        <li>Faculty</li>
+      </ul>
+      <h1>Meet Our <em>Faculty</em><br>&amp; Staff</h1>
+      <p>World-class scholars, dedicated mentors, and pioneering researchers — the minds who shape the Nova experience and inspire the next generation of leaders.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span><i class="fa fa-star"></i> 320+ Faculty Members</span>
+    <span><i class="fa fa-star"></i> 18 Departments</span>
+    <span><i class="fa fa-star"></i> 92% PhD Holders</span>
+    <span><i class="fa fa-star"></i> 540+ Research Publications</span>
+    <span><i class="fa fa-star"></i> 60+ Countries Represented</span>
+    <span><i class="fa fa-star"></i> 14 Nobel Affiliates</span>
+    <span><i class="fa fa-star"></i> 320+ Faculty Members</span>
+    <span><i class="fa fa-star"></i> 18 Departments</span>
+    <span><i class="fa fa-star"></i> 92% PhD Holders</span>
+    <span><i class="fa fa-star"></i> 540+ Research Publications</span>
+    <span><i class="fa fa-star"></i> 60+ Countries Represented</span>
+    <span><i class="fa fa-star"></i> 14 Nobel Affiliates</span>
+  </div>
+</div>
+
+<!-- FACULTY STATS -->
+<div class="faculty-stats">
+  <div class="container">
+    <div class="faculty-stats-grid">
+      <div class="fstat-item">
+        <div class="fstat-num fstat-gold"><span class="stat-num" data-target="320">0</span>+</div>
+        <div class="fstat-label">Faculty Members</div>
+      </div>
+      <div class="fstat-item">
+        <div class="fstat-num"><span class="stat-num" data-target="18">0</span></div>
+        <div class="fstat-label">Departments</div>
+      </div>
+      <div class="fstat-item">
+        <div class="fstat-num fstat-gold"><span class="stat-num" data-target="92">0</span>%</div>
+        <div class="fstat-label">Holds Doctoral Degrees</div>
+      </div>
+      <div class="fstat-item">
+        <div class="fstat-num"><span class="stat-num" data-target="540">0</span>+</div>
+        <div class="fstat-label">Research Publications</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DEPARTMENTS -->
+<section class="departments">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">Explore by Field</div>
+        <h2 class="section-title reveal">Our Academic <em>Departments</em></h2>
+      </div>
+      <a href="#" class="link-arrow reveal">All Departments <i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div class="dept-grid">
+      <div class="dept-card reveal">
+        <div class="dept-card-inner">
+          <div class="dept-num">01</div>
+          <div class="dept-icon"><i class="fa fa-flask"></i></div>
+          <h4>Sciences &amp; Technology</h4>
+          <p>Cutting-edge research in physics, chemistry, biology, and computer science with world-renowned faculty.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 62 Faculty</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-1">
+        <div class="dept-card-inner">
+          <div class="dept-num">02</div>
+          <div class="dept-icon"><i class="fa fa-scale-balanced"></i></div>
+          <h4>Law &amp; Political Science</h4>
+          <p>Rigorous legal theory and political philosophy combined with practical real-world application and debate.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 44 Faculty</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-2">
+        <div class="dept-card-inner">
+          <div class="dept-num">03</div>
+          <div class="dept-icon"><i class="fa fa-hospital"></i></div>
+          <h4>Medicine &amp; Health Sciences</h4>
+          <p>Training the next generation of physicians and medical researchers with state-of-the-art facilities.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 78 Faculty</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-3">
+        <div class="dept-card-inner">
+          <div class="dept-num">04</div>
+          <div class="dept-icon"><i class="fa fa-landmark"></i></div>
+          <h4>Humanities &amp; Arts</h4>
+          <p>Exploring literature, history, philosophy, and the fine arts through a global and interdisciplinary lens.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 51 Faculty</div>
+        </div>
+      </div>
+      <div class="dept-card reveal">
+        <div class="dept-card-inner">
+          <div class="dept-num">05</div>
+          <div class="dept-icon"><i class="fa fa-chart-line"></i></div>
+          <h4>Economics &amp; Business</h4>
+          <p>Preparing future leaders with grounding in macroeconomics, finance, entrepreneurship, and strategy.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 39 Faculty</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-1">
+        <div class="dept-card-inner">
+          <div class="dept-num">06</div>
+          <div class="dept-icon"><i class="fa fa-microchip"></i></div>
+          <h4>Engineering &amp; Computing</h4>
+          <p>Solving the world's greatest challenges through innovation in civil, electrical, and software engineering.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 57 Faculty</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-2">
+        <div class="dept-card-inner">
+          <div class="dept-num">07</div>
+          <div class="dept-icon"><i class="fa fa-earth-americas"></i></div>
+          <h4>Environmental Studies</h4>
+          <p>Addressing climate, sustainability, and ecological science with interdisciplinary research and field work.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 28 Faculty</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-3">
+        <div class="dept-card-inner">
+          <div class="dept-num">08</div>
+          <div class="dept-icon"><i class="fa fa-graduation-cap"></i></div>
+          <h4>Education</h4>
+          <p>Shaping the future of teaching through evidence-based methods, curriculum design, and educational policy.</p>
+          <div class="dept-count"><i class="fa fa-user-tie"></i> 33 Faculty</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED FACULTY -->
+<section class="featured-faculty">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">Distinguished Scholars</div>
+        <h2 class="section-title reveal">Featured <em>Professors</em></h2>
+      </div>
+      <a href="#all-faculty" class="link-arrow reveal">View All Faculty <i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div class="prof-grid">
+      <div class="prof-card reveal">
+        <div class="prof-img">
+          <img src="https://plus.unsplash.com/premium_photo-1683134169138-9037062cba51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professor">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Prof. Daniel William</h5>
+          <span class="prof-role">Dean of Sciences</span>
+          <div class="prof-dept"><i class="fa fa-flask"></i> Sciences & Technology</div>
+        </div>
+      </div>
+      <div class="prof-card reveal reveal-delay-1">
+        <div class="prof-img">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Professor">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Dr. Amara Willis</h5>
+          <span class="prof-role">Professor of Law</span>
+          <div class="prof-dept"><i class="fa fa-scale-balanced"></i> Law & Political Science</div>
+        </div>
+      </div>
+      <div class="prof-card reveal reveal-delay-2">
+        <div class="prof-img">
+          <img src="https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professor">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Dr. Marcus Tribbiani</h5>
+          <span class="prof-role">Research Prof of Medicine</span>
+          <div class="prof-dept"><i class="fa fa-hospital"></i> Medicine & Health Sciences</div>
+        </div>
+      </div>
+      <div class="prof-card reveal reveal-delay-3">
+        <div class="prof-img">
+          <img src="https://plus.unsplash.com/premium_photo-1661942126259-fb08e7cce1e2?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professor">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Prof. Sophia Anna Sui</h5>
+          <span class="prof-role">Head of Humanities</span>
+          <div class="prof-dept"><i class="fa fa-landmark"></i> Humanities & Arts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP SPOTLIGHT -->
+<section class="leadership">
+  <div class="container">
+    <div class="section-label reveal" style="color:var(--gold-light)">A Message From Leadership</div>
+    <h2 class="section-title reveal">Guided by <em>Vision</em>,<br>Driven by Purpose</h2>
+    <div class="leadership-grid">
+      <div class="leadership-img reveal">
+        <div class="leadership-img-main">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80" alt="Provost">
+        </div>
+        <div class="leadership-badge">
+          <div class="years">20</div>
+          <p>Years of academic excellence</p>
+        </div>
+      </div>
+      <div class="leadership-text reveal reveal-delay-1">
+        <div class="quote">"Our faculty are the heartbeat of Nova — not merely conveyors of knowledge, but architects of futures. Every scholar here is chosen not only for their expertise, but for their passion to ignite curiosity."</div>
+        <p>At the University of Nova, we believe that great teaching is inseparable from great research. Our faculty members are globally recognized leaders who bring their discoveries directly into the classroom.</p>
+        <p>We are committed to building a faculty community that reflects the diversity of thought and background necessary to address the complex challenges of the modern world.</p>
+        <div class="leader-profile">
+          
+          <div>
+            <h5>Prof. Richard Martin Geller</h5>
+            <span>Senior Vice Chancellor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL FACULTY -->
+<section class="all-faculty" id="all-faculty">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">Directory</div>
+        <h2 class="section-title reveal">All Faculty <em>Members</em></h2>
+      </div>
+    </div>
+    <div class="filter-bar reveal" style="align-items:center;">
+      <button class="filter-btn active" onclick="filterFaculty(this,'all')">All Departments</button>
+      <button class="filter-btn" onclick="filterFaculty(this,'sciences')">Sciences</button>
+      <button class="filter-btn" onclick="filterFaculty(this,'law')">Law</button>
+      <button class="filter-btn" onclick="filterFaculty(this,'medicine')">Medicine</button>
+      <button class="filter-btn" onclick="filterFaculty(this,'engineering')">Engineering</button>
+      <button class="filter-btn" onclick="filterFaculty(this,'humanities')">Humanities</button>
+      <div class="search-bar">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search by name or specialization…" id="facultySearch" oninput="searchFaculty()">
+      </div>
+    </div>
+    <div class="faculty-list-grid" id="facultyGrid">
+      <!-- Sciences -->
+      <div class="faculty-list-card reveal" data-dept="sciences">
+        <div class="flc-img">
+          <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Faculty">
+          <div class="flc-dept-tag">Sciences</div>
+        </div>
+        <div class="flc-body">
+          <h4>Dr. James Green</h4>
+          <span class="flc-role">Associate Professor of Physics</span>
+          <p>Specializing in quantum condensed matter physics, Dr. Green has authored over 40 peer-reviewed publications and leads the Nova Quantum Research Lab.</p>
+          <div class="flc-meta">
+            <span><i class="fa fa-graduation-cap"></i> PhD, MIT</span>
+            <span><i class="fa fa-book"></i> 42 Publications</span>
+          </div>
+          <div class="flc-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Law -->
+      <div class="faculty-list-card reveal reveal-delay-1" data-dept="law">
+        <div class="flc-img">
+          <img src="https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?q=80&w=841&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Faculty">
+          <div class="flc-dept-tag">Law</div>
+        </div>
+        <div class="flc-body">
+          <h4>Prof. Priya Chatterji</h4>
+          <span class="flc-role">Professor of International Law</span>
+          <p>An internationally recognized expert in human rights law and global governance, Prof. Chatterji has advised multiple UN bodies and heads the Nova Policy Institute.</p>
+          <div class="flc-meta">
+            <span><i class="fa fa-graduation-cap"></i> JD/PhD, Harvard</span>
+            <span><i class="fa fa-book"></i> 3 Books</span>
+          </div>
+          <div class="flc-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Medicine -->
+      <div class="faculty-list-card reveal reveal-delay-2" data-dept="medicine">
+        <div class="flc-img">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80" alt="Faculty">
+          <div class="flc-dept-tag">Medicine</div>
+        </div>
+        <div class="flc-body">
+          <h4>Dr. Rajiv Nair</h4>
+          <span class="flc-role">Assistant Professor, Neuroscience</span>
+          <p>Dr. Nair's groundbreaking research in neuroplasticity and cognitive rehabilitation has been featured in Nature and Science. He leads the Neural Repair Lab.</p>
+          <div class="flc-meta">
+            <span><i class="fa fa-graduation-cap"></i> MD/PhD, Oxford</span>
+            <span><i class="fa fa-book"></i> 29 Publications</span>
+          </div>
+          <div class="flc-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Engineering -->
+      <div class="faculty-list-card reveal" data-dept="engineering">
+        <div class="flc-img">
+          <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Faculty">
+          <div class="flc-dept-tag">Engineering</div>
+        </div>
+        <div class="flc-body">
+          <h4>Prof. Tomas Buffay</h4>
+          <span class="flc-role">Professor of Aerospace Engineering</span>
+          <p>A former NASA consultant, Prof. Buffay brings real-world experience to Nova's engineering programs and leads collaborative research with leading aerospace firms.</p>
+          <div class="flc-meta">
+            <span><i class="fa fa-graduation-cap"></i> PhD, UCLA</span>
+            <span><i class="fa fa-book"></i> 58 Publications</span>
+          </div>
+          <div class="flc-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Humanities -->
+      <div class="faculty-list-card reveal reveal-delay-1" data-dept="humanities">
+        <div class="flc-img">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80" alt="Faculty">
+          <div class="flc-dept-tag">Humanities</div>
+        </div>
+        <div class="flc-body">
+          <h4>Dr. Isabelle Bing</h4>
+          <span class="flc-role">Associate Professor of Philosophy</span>
+          <p>Dr. Bing's work on applied ethics and moral philosophy has shaped curricula across 12 universities. Her latest book received the Philosophical Society Prize.</p>
+          <div class="flc-meta">
+            <span><i class="fa fa-graduation-cap"></i> PhD, Columbia</span>
+            <span><i class="fa fa-book"></i> 5 Books</span>
+          </div>
+          <div class="flc-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Sciences -->
+      <div class="faculty-list-card reveal reveal-delay-2" data-dept="sciences">
+        <div class="flc-img">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Faculty">
+          <div class="flc-dept-tag">Sciences</div>
+        </div>
+        <div class="flc-body">
+          <h4>Dr. Yuri Tanaka</h4>
+          <span class="flc-role">Assistant Professor of Biochemistry</span>
+          <p>Dr. Tanaka's research on protein folding mechanisms has significant implications for Alzheimer's disease treatment. She is a recipient of the Young Researcher Medal.</p>
+          <div class="flc-meta">
+            <span><i class="fa fa-graduation-cap"></i> PhD, Tokyo Univ.</span>
+            <span><i class="fa fa-book"></i> 21 Publications</span>
+          </div>
+          <div class="flc-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN FACULTY CTA -->
+<section class="join-cta">
+  <div class="container">
+    <div class="join-cta-inner">
+      <div class="join-cta-img reveal">
+        <img src="https://images.unsplash.com/photo-1477281765962-ef34e8bb0967?q=80&w=733&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Join Faculty">
+      </div>
+      <div class="join-cta-text">
+        <div class="section-label reveal">Career Opportunities</div>
+        <h2 class="section-title reveal">Join the Nova <em>Faculty</em></h2>
+        <p class="reveal">We are always seeking exceptional scholars and educators to join our community. At Nova, you'll find the resources, freedom, and collaborative spirit to do the work that matters most.</p>
+        <div class="join-cta-features reveal">
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-flask"></i></div>
+            <div>
+              <h5>Research Funding</h5>
+              <p>Competitive grants and lab budgets to advance your scholarship.</p>
+            </div>
+          </div>
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-people-group"></i></div>
+            <div>
+              <h5>Global Collaboration</h5>
+              <p>Partner with institutions and researchers across the world.</p>
+            </div>
+          </div>
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-house-chimney"></i></div>
+            <div>
+              <h5>Faculty Housing</h5>
+              <p>Subsidized on-campus residences for new faculty appointees.</p>
+            </div>
+          </div>
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-award"></i></div>
+            <div>
+              <h5>Teaching Awards</h5>
+              <p>Annual recognition programs celebrating outstanding educators.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cta-btns-row reveal">
+          <a href="#" class="btn-primary">View Open Positions <i class="fa fa-arrow-right"></i></a>
+          <a href="#" class="btn-outline">Submit Inquiry <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="section-label reveal" style="justify-content:center;color:var(--gold-light)">Start Your Journey</div>
+    <h2 class="reveal">Begin Your Future at<br><em style="font-style:italic;color:var(--gold-light)">Nova University</em></h2>
+    <p class="reveal">Join thousands of students worldwide who have transformed their lives through world-class education at the University of Nova. Apply today and shape tomorrow.</p>
+    <div class="cta-btns reveal">
+      <a href="#" class="btn-primary">Apply Now <i class="fa fa-arrow-right"></i></a>
+      <a href="#" class="btn-outline">Explore Programs <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" style="padding:0;margin-bottom:4px;">
+          <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="logo-text">
+            <span>University of Nova</span>
+            <span>excellence redefined daily</span>
+          </div>
+        </a>
+        <p>We are passionate about education, dedicated to providing high-quality resources for learners from all backgrounds and walks of life.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h6>Our Campus</h6>
+        <ul>
+          <li><a href="../academic/academic-areas.html">Academic Area</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="campus.html">Campus Life</a></li>
+          <li><a href="../academic/calendar.html">Academic Calendar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Pages</h6>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../admission.html">Admission</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="faculty.html">Faculty Staff</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="../applynow.html">Apply Now</a></li>
+          <li><a href="../studentservices/scholarship.html">Scholarships</a></li>
+          <li><a href="../admission.html#requirements">Requirements</a></li>
+          <li><a href="../admission.html#tuition">Tuition Fees</a></li>
+          <li><a href="../Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026. All Rights Reserved by Nova University</span>
+      <span>Designed by Gargee & Kaustuva for academic excellence</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../js/faculty.js"></script>
+</body>
+</html>

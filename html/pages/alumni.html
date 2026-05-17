@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="../../css/faculty.css">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alumni — University of Nova</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="#"><i class="fa-solid fa-phone"></i> +91 7865498765 NOVA-EDU</a>
+      <a href="#"><i class="fa-solid fa-location-dot"></i> Nova Campus, Main Avenue</a>
+    </div>
+    <div class="top-bar-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <select class="lang-select"><option>ENG</option></select>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../../index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="logo-text">
+          <span>University of Nova</span>
+          <span>excellence redefined daily</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <button class="nav-close" id="navClose"><i class="fa fa-times"></i></button>
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a href="#">Pages <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="about.html">About Us</a><a href="faculty.html">Faculty</a><a href="events.html">Events</a>
+           <a href="campus.html">Campus Life</a><a href="alumni.html" style="color:var(--gold-light)">Alumni</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Academics <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown mega">
+            <div class="dropdown-group">
+              <h6>Academics</h6>
+              <a href="../academic/academic-areas.html">Academic Areas</a><a href="../academic/calendar.html">Academic Calendar</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Admission</h6>
+              <a href="../admission.html#requirements">Requirements</a>
+              <a href="../admission.html#process">Admission Process</a>
+              <a href="../admission.html#tuition">Tuition Fee</a>
+            </div>
+            <div class="dropdown-group">
+              <h6>Programs</h6>
+              <a href="../programs/sd.html">Software Development</a><a href="../programs/cw.html">Creative Writing</a><a href="../programs/arch.html">Architecture Design</a><a href="../programs/cine.html">Cinematography</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Student Services <i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="../studentservices/scholarship.html">Scholarships</a>
+          </div>
+        </li>
+        <li><a href="../Contact.html">Contact</a></li>
+        <li><a href="../applynow.html" class="nav-cta">Apply Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1660547923766-1214fc9e0a83" alt="Alumni" loading="eager" decoding="async" width="1200" height="800">
+  </div>
+  <div class="page-hero-deco">Alumni</div>
+  <div class="container">
+    <div class="page-hero-content">
+      <ul class="breadcrumb">
+        <li>Home</li>
+        <li>Pages</li>
+        <li>Alumni</li>
+      </ul>
+      <h1>Our <em>Alumni</em><br>&amp; Their Legacy</h1>
+      <p>From boardrooms to research labs, courtrooms to creative studios — Nova graduates are shaping the world. Meet the community that carries our mission forward.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span><i class="fa fa-star"></i> 48,000+ Graduates</span>
+    <span><i class="fa fa-star"></i> 120+ Countries</span>
+    <span><i class="fa fa-star"></i> 340+ Industry Leaders</span>
+    <span><i class="fa fa-star"></i> 92 Nobel & Award Laureates</span>
+    <span><i class="fa fa-star"></i> ₹4,200 Cr+ Combined Impact</span>
+    <span><i class="fa fa-star"></i> 60 Years of Excellence</span>
+    <span><i class="fa fa-star"></i> 48,000+ Graduates</span>
+    <span><i class="fa fa-star"></i> 120+ Countries</span>
+    <span><i class="fa fa-star"></i> 340+ Industry Leaders</span>
+    <span><i class="fa fa-star"></i> 92 Nobel & Award Laureates</span>
+    <span><i class="fa fa-star"></i> ₹4,200 Cr+ Combined Impact</span>
+    <span><i class="fa fa-star"></i> 60 Years of Excellence</span>
+  </div>
+</div>
+
+<!-- ALUMNI STATS -->
+<div class="faculty-stats">
+  <div class="container">
+    <div class="faculty-stats-grid">
+      <div class="fstat-item">
+        <div class="fstat-num fstat-gold"><span class="stat-num" data-target="48000">0</span>+</div>
+        <div class="fstat-label">Graduates Worldwide</div>
+      </div>
+      <div class="fstat-item">
+        <div class="fstat-num"><span class="stat-num" data-target="120">0</span>+</div>
+        <div class="fstat-label">Countries Represented</div>
+      </div>
+      <div class="fstat-item">
+        <div class="fstat-num fstat-gold"><span class="stat-num" data-target="94">0</span>%</div>
+        <div class="fstat-label">Employment Rate</div>
+      </div>
+      <div class="fstat-item">
+        <div class="fstat-num"><span class="stat-num" data-target="340">0</span>+</div>
+        <div class="fstat-label">C-Suite Leaders</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTABLE ALUMNI -->
+<section class="featured-faculty" style="background:#fff;">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">Distinguished Graduates</div>
+        <h2 class="section-title reveal">Notable <em>Alumni</em></h2>
+      </div>
+      <a href="#" class="link-arrow reveal">Full Alumni Directory <i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div class="prof-grid">
+
+      <!-- Alumni 1 -->
+      <div class="prof-card reveal">
+        <div class="prof-img">
+          <img src="https://images.unsplash.com/photo-1590233357551-265f689a51ea?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alumni" loading="lazy" decoding="async" width="600" height="800">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Arjun Mehta</h5>
+          <span class="prof-role">CEO, Axiom Technologies</span>
+          <div class="prof-dept"><i class="fa fa-graduation-cap"></i> B.Tech Computer Science, 2026</div>
+        </div>
+      </div>
+
+      <!-- Alumni 2 -->
+      <div class="prof-card reveal reveal-delay-1">
+        <div class="prof-img">
+          <img src="https://images.unsplash.com/photo-1508810301179-d8da058a3d29?q=80&w=852&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alumni" loading="lazy" decoding="async" width="600" height="800">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Dr. Priya Nair</h5>
+          <span class="prof-role">Director, WHO South Asia</span>
+          <div class="prof-dept"><i class="fa fa-graduation-cap"></i> MBBS & MD, Medicine, 2026</div>
+        </div>
+      </div>
+
+      <!-- Alumni 3 -->
+      <div class="prof-card reveal reveal-delay-2">
+        <div class="prof-img">
+          <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alumni" loading="lazy" decoding="async" width="600" height="800">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Samuel Okafor</h5>
+          <span class="prof-role">Senior Partner, Okafor & Associates</span>
+          <div class="prof-dept"><i class="fa fa-graduation-cap"></i> LLB, Law & Political Science, 2026</div>
+        </div>
+      </div>
+
+      <!-- Alumni 4 -->
+      <div class="prof-card reveal reveal-delay-3">
+        <div class="prof-img">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80" alt="Alumni" loading="lazy" decoding="async" width="600" height="800">
+          <div class="prof-socials">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+          </div>
+        </div>
+        <div class="prof-info">
+          <h5>Lena Vasquez</h5>
+          <span class="prof-role">Award-Winning Filmmaker</span>
+          <div class="prof-dept"><i class="fa fa-graduation-cap"></i> BFA Cinematography, 2026</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ALUMNI SPOTLIGHT (leadership-style) -->
+<section class="leadership">
+  <div class="container">
+    <div class="section-label reveal" style="color:var(--gold-light);">Alumni Story</div>
+    <div class="leadership-grid">
+      <div class="leadership-img reveal">
+        <div class="leadership-img-main">
+          <img src="https://images.unsplash.com/photo-1549045337-967927d923c0?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured Alumni" loading="lazy" decoding="async" width="800" height="1000">
+        </div>
+        <div class="leadership-badge">
+          <div class="years">2026</div>
+          <p>Class of Nova</p>
+        </div>
+      </div>
+      <div class="leadership-text reveal reveal-delay-1">
+        <h2 class="section-title" style="color:#fff;">Rohan <em>Krishnamurthy</em></h2>
+        <div class="quote">"Nova didn't just teach me engineering — it taught me how to think, fail, and build something that matters."</div>
+        <p>Rohan graduated with a B.Tech in Computer Science in 2026 and went on to co-found NovaSpark Labs, a tech startup that today powers infrastructure for over 200 million users across Southeast Asia.</p>
+        <p>Named to TIME's 100 Most Influential Innovators list , he remains one of Nova's most active alumni, mentoring students through the Nova Founders Fellowship each year.</p>
+        <div class="leader-profile">
+          
+          <div>
+            <h5>Rohan Krishnamurthy</h5>
+            <span>Co-founder & CEO, NovaSpark Labs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALUMNI SECTORS -->
+<section class="departments" style="background:var(--off-white);">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="section-label reveal">Where They Go</div>
+        <h2 class="section-title reveal">Alumni Across <em>Industries</em></h2>
+      </div>
+    </div>
+    <div class="dept-grid">
+      <div class="dept-card reveal">
+        <div class="dept-card-inner">
+          <div class="dept-num">01</div>
+          <div class="dept-icon"><i class="fa fa-microchip"></i></div>
+          <h4>Technology &amp; Innovation</h4>
+          <p>Nova engineers and scientists drive breakthroughs at global tech companies and startups redefining the digital era.</p>
+          <div class="dept-count"><i class="fa fa-user"></i> 11,400+ Alumni</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-1">
+        <div class="dept-card-inner">
+          <div class="dept-num">02</div>
+          <div class="dept-icon"><i class="fa fa-heartbeat"></i></div>
+          <h4>Medicine &amp; Public Health</h4>
+          <p>From hospitals to global health agencies, Nova medical graduates are at the forefront of patient care and policy.</p>
+          <div class="dept-count"><i class="fa fa-user"></i> 9,200+ Alumni</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-2">
+        <div class="dept-card-inner">
+          <div class="dept-num">03</div>
+          <div class="dept-icon"><i class="fa fa-scale-balanced"></i></div>
+          <h4>Law &amp; Governance</h4>
+          <p>Nova-trained lawyers and policymakers shape legislation, lead judiciaries, and advocate for justice worldwide.</p>
+          <div class="dept-count"><i class="fa fa-user"></i> 6,800+ Alumni</div>
+        </div>
+      </div>
+      <div class="dept-card reveal reveal-delay-3">
+        <div class="dept-card-inner">
+          <div class="dept-num">04</div>
+          <div class="dept-icon"><i class="fa fa-paintbrush"></i></div>
+          <h4>Arts &amp; Media</h4>
+          <p>Writers, filmmakers, designers, and journalists — Nova's creative alumni are a cultural force across the globe.</p>
+          <div class="dept-count"><i class="fa fa-user"></i> 5,100+ Alumni</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALUMNI CONNECT CTA -->
+<section class="join-cta">
+  <div class="container">
+    <div class="join-cta-inner">
+      <div class="join-cta-img reveal">
+        <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alumni Network" loading="lazy" decoding="async" width="800" height="800">
+      </div>
+      <div class="join-cta-text">
+        <div class="section-label reveal">Stay Connected</div>
+        <h2 class="section-title reveal">Join the Nova <em>Alumni Network</em></h2>
+        <p class="reveal">The Nova alumni community is a lifelong resource — a network of over 48,000 graduates across 120 countries, united by a shared pursuit of excellence. Whether you're seeking mentorship, partnerships, or simply a chance to give back, there's a place for you here.</p>
+        <div class="join-cta-features reveal">
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-handshake"></i></div>
+            <div>
+              <h5>Mentorship Programs</h5>
+              <p>Guide current students with your industry expertise and lived experience.</p>
+            </div>
+          </div>
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-briefcase"></i></div>
+            <div>
+              <h5>Career Network</h5>
+              <p>Connect with alumni hiring or seeking talent across every sector.</p>
+            </div>
+          </div>
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-calendar-days"></i></div>
+            <div>
+              <h5>Alumni Events</h5>
+              <p>Annual reunions, chapter meetups, and exclusive speaker evenings worldwide.</p>
+            </div>
+          </div>
+          <div class="join-feature">
+            <div class="join-feature-icon"><i class="fa fa-circle-dollar-to-slot"></i></div>
+            <div>
+              <h5>Give Back</h5>
+              <p>Support scholarships and research that open doors for the next generation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cta-btns-row reveal">
+          <a href="#" class="btn-primary">Register as Alumni <i class="fa fa-arrow-right"></i></a>
+          <a href="#" class="btn-outline">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="section-label reveal" style="justify-content:center;color:var(--gold-light);">Your Journey Starts Here</div>
+    <h2 class="reveal">Become Part of the<br><em style="font-style:italic;color:var(--gold-light);">Nova Legacy</em></h2>
+    <p class="reveal">Every great Nova alumnus was once a student who dared to dream bigger. Apply today and take your place in a community that lasts a lifetime.</p>
+    <div class="cta-btns reveal">
+      <a href="#" class="btn-primary">Apply Now <i class="fa fa-arrow-right"></i></a>
+      <a href="#" class="btn-outline">Explore Programs <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" style="padding:0;margin-bottom:4px;">
+          <div class="logo-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="logo-text">
+            <span>University of Nova</span>
+            <span>excellence redefined daily</span>
+          </div>
+        </a>
+        <p>We are passionate about education, dedicated to providing high-quality resources for learners from all backgrounds and walks of life.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h6>Our Campus</h6>
+        <ul>
+          <li><a href="../academic/academic-areas.html">Academic Area</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="campus.html">Campus Life</a></li>
+          <li><a href="../academic/calendar.html">Academic Calendar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Pages</h6>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../admission.html">Admission</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+          <li><a href="faculty.html">Faculty Staff</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="../applynow.html">Apply Now</a></li>
+          <li><a href="../studentservices/scholarship.html">Scholarships</a></li>
+          <li><a href="../admission.html#requirements">Requirements</a></li>
+          <li><a href="../admission.html#tuition">Tuition Fees</a></li>
+          <li><a href="../Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026. All Rights Reserved by Nova University</span>
+      <span>Designed by Gargee & Kaustuva for academic excellence</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../../js/faculty.js"></script>
+</body>
+</html>
