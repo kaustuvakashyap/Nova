@@ -119,13 +119,6 @@ document.querySelectorAll('.radio-opt').forEach(opt => {
   });
 });
 
-// Hamburger menu
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('navMenu').classList.toggle('open');
-});
-
-updateProgress();
-
 // Add this at the bottom of your applynow.js
 document.querySelectorAll('input, select, textarea').forEach(field => {
   field.addEventListener('input', () => {

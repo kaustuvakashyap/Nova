@@ -177,16 +177,6 @@
 .step-item h5 { color: #fff; font-size: 18px; margin-bottom: 5px; }
 .step-item p { color: rgba(255,255,255,0.6); font-size: 14px; line-height: 1.5; }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .scholarship-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 768px) {
-  .scholarship-grid { grid-template-columns: 1fr; }
-  .process-text { padding: 40px 20px; }
-  .about-grid { grid-template-columns: 1fr; }
-}
-
 /* ========== CTA BANNER ========== */
 .cta-banner { 
   padding: 90px 0; background: 
@@ -223,3 +213,23 @@
   justify-content: center; 
   flex-wrap: wrap; 
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .scholarship-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 1024px) {
+    .programs-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .dropdown { position: static; display: none; box-shadow: none; background: rgba(255,255,255,0.04); min-width: 100%; opacity: 1; visibility: visible; transform: none; }
+    .dropdown.mobile-open { display: block; }
+    .dropdown.mega { grid-template-columns: 1fr; padding: 12px; }
+    .dropdown.mega.mobile-open { display: grid; }
+    .nav-menu > li { display: block; width: 100%; }
+}
+@media (max-width: 768px) {
+  .scholarship-grid { grid-template-columns: 1fr; }
+  .process-text { padding: 40px 20px; }
+  .about-grid { grid-template-columns: 1fr; }
+}
+

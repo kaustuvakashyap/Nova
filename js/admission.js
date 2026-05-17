@@ -1,18 +1,6 @@
-/* ============================================================
-   admission.js — University of Nova | Admission Page
-   Handles: navbar, mobile menu, dropdowns, smooth scroll,
-            scroll-reveal, process accordion, FAQ accordion,
-            active nav highlighting, anchor pills
-   ============================================================ */
-
 (function () {
   'use strict';
-
-  /* ──────────────────────────────────────────────
-     1. STICKY NAVBAR
-     Adds .scrolled class after 50px scroll,
-     which main.css uses to shrink/shadow the bar.
-  ────────────────────────────────────────────── */
+  /* 1. STICKY NAVBAR */
   const navbar = document.getElementById('navbar');
 
   function handleNavbarScroll() {
@@ -23,76 +11,7 @@
   window.addEventListener('scroll', handleNavbarScroll, { passive: true });
   handleNavbarScroll(); // run once on load in case page is already scrolled
 
-
-  /* ──────────────────────────────────────────────
-     2. MOBILE HAMBURGER MENU
-     Toggles the nav-menu open/closed.
-     Closes on: close button, outside click, ESC key.
-  ────────────────────────────────────────────── */
-  const hamburger = document.getElementById('hamburger');
-  const navMenu   = document.getElementById('navMenu');
-  const navClose  = document.getElementById('navClose');
-
-  function openMenu() {
-    navMenu.classList.add('open');
-    hamburger.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden'; // prevent scroll behind overlay
-  }
-
-  function closeMenu() {
-    navMenu.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  }
-
-  if (hamburger) hamburger.addEventListener('click', openMenu);
-  if (navClose)  navClose.addEventListener('click', closeMenu);
-
-  // Close when clicking outside the menu
-  document.addEventListener('click', (e) => {
-    if (
-      navMenu && navMenu.classList.contains('open') &&
-      !navMenu.contains(e.target) &&
-      !hamburger.contains(e.target)
-    ) closeMenu();
-  });
-
-  // Close on ESC
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
-  });
-
-
-  /* ──────────────────────────────────────────────
-     3. DROPDOWN MENUS (Desktop hover + mobile tap)
-     On desktop: CSS handles hover, JS handles
-     accessibility (keyboard nav).
-     On mobile: tap the parent link to toggle.
-  ────────────────────────────────────────────── */
-  const dropdownParents = document.querySelectorAll('.nav-menu > li > a');
-
-  dropdownParents.forEach((link) => {
-    const dropdown = link.nextElementSibling;
-    if (!dropdown || !dropdown.classList.contains('dropdown')) return;
-
-    // Mobile: tap parent link toggles its dropdown
-    link.addEventListener('click', (e) => {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        const isOpen = dropdown.classList.contains('mobile-open');
-        // Close all other dropdowns
-        document.querySelectorAll('.dropdown.mobile-open').forEach(d => d.classList.remove('mobile-open'));
-        if (!isOpen) dropdown.classList.add('mobile-open');
-      }
-    });
-  });
-
-
-  /* ──────────────────────────────────────────────
-     4. SMOOTH SCROLL for anchor pills & in-page links
-     Offsets by navbar height so sections aren't
-     hidden behind the sticky bar.
-  ────────────────────────────────────────────── */
+  /*4. SMOOTH SCROLL */
   function getNavbarHeight() {
     return navbar ? navbar.offsetHeight : 80;
   }
@@ -127,12 +46,7 @@
   }
 
 
-  /* ──────────────────────────────────────────────
-     5. SCROLL REVEAL
-     Fades + slides elements up as they enter the
-     viewport. Excludes accordion/FAQ items so
-     they're always visible and clickable.
-  ────────────────────────────────────────────── */
+  /* 5. SCROLL REVEAL */
   const revealEls = document.querySelectorAll(
     '.reveal:not(.pa-item):not(.faq-item)'
   );
@@ -157,11 +71,7 @@
   });
 
 
-  /* ──────────────────────────────────────────────
-     6. PROCESS ACCORDION
-     One item open at a time.
-     First item is open by default (class="pa-item open").
-  ────────────────────────────────────────────── */
+  /*6. PROCESS ACCORDION*/
   function closeAllAccordionItems() {
     document.querySelectorAll('.pa-item.open').forEach((item) => {
       item.classList.remove('open');
@@ -195,11 +105,7 @@
   });
 
 
-  /* ──────────────────────────────────────────────
-     7. FAQ ACCORDION
-     One item open at a time.
-     Updates +/− icon correctly.
-  ────────────────────────────────────────────── */
+  /*7. FAQ ACCORDION*/
   function closeAllFaqItems() {
     document.querySelectorAll('.faq-item.open').forEach((item) => {
       item.classList.remove('open');
@@ -231,12 +137,7 @@
   });
 
 
-  /* ──────────────────────────────────────────────
-     8. ACTIVE SECTION HIGHLIGHTING
-     Watches which section (#requirements, #process,
-     #tuition) is in view and highlights the
-     matching anchor pill in the header.
-  ────────────────────────────────────────────── */
+  /* 8. ACTIVE SECTION HIGHLIGHTING */
   const sections    = document.querySelectorAll('section[id]');
   const anchorPills = document.querySelectorAll('.anchor-pill');
 
@@ -258,11 +159,7 @@
   sections.forEach((s) => sectionObserver.observe(s));
 
 
-  /* ──────────────────────────────────────────────
-     9. TICKER PAUSE ON HOVER
-     Stops the scrolling ticker when the user
-     hovers over it (accessibility / readability).
-  ────────────────────────────────────────────── */
+  /* 9. TICKER PAUSE ON HOVER */
   const tickerTrack = document.querySelector('.ticker-track');
   if (tickerTrack) {
     const tickerBar = tickerTrack.closest('.ticker-bar');

@@ -357,6 +357,15 @@ input:user-invalid, select:user-invalid {
   .apply-sidebar { position: static; }
   .step-nav { top: 0; }
 }
+@media (max-width: 1024px) {
+    .programs-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .dropdown { position: static; display: none; box-shadow: none; background: rgba(255,255,255,0.04); min-width: 100%; opacity: 1; visibility: visible; transform: none; }
+    .dropdown.mobile-open { display: block; }
+    .dropdown.mega { grid-template-columns: 1fr; padding: 12px; }
+    .dropdown.mega.mobile-open { display: grid; }
+    .nav-menu > li { display: block; width: 100%; }
+}
 @media (max-width: 640px) {
   .field-row.cols-2,
   .field-row.cols-3 { grid-template-columns: 1fr; }
