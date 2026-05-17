@@ -31,3 +31,40 @@ The development process follows a *GUI-first approach*, where interface design d
                   
 The GUI is designed to be responsive, ensuring consistent user experience across devices and screen sizes.
 
+**FOLDER ORGANISATION**
+```
+nova-university/
+├── index.html
+├── README.md
+│
+├── css/
+│   ├── main.css
+│   ├── index.css
+│   ├── admission.css
+│   ├── scholarships.css
+│   ├── applynow.css
+│   ├── allprog.css
+│   └── programs.css
+│
+├── js/
+│   ├── index.js
+│   ├── admission.js
+│   ├── applynow.js
+│   ├── allprog.js
+│   └── program.js
+│
+├── images/
+│   └── campus.jpg
+│
+└── html/
+    ├── programs/
+    │   ├── sd.html
+    │   ├── cw.html
+    │   ├── arch.html
+    │   └── cine.html
+    │
+    └── studentservices/
+        ├── scholarship.html
+        ├── admission.html
+        └── applynow.html
+```
