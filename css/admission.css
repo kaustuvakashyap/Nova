@@ -793,7 +793,7 @@
 
   /* the top anchor phone settings */
   .anchor-bar .container { padding: 10px 10px; }
-  .anchor-pill { padding: 8px 20px; font-size: 11px; letter-spacing: 1px; }
+  .anchor-pill { padding: 8px 16px; font-size: 11px; letter-spacing: 1px; }
 }
 
 @media (max-width: 640px) {
