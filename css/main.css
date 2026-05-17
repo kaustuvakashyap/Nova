@@ -256,8 +256,10 @@ footer { background: var(--navy-deep); padding: 80px 0 0; color: rgba(255,255,25
 
 @media (max-width: 640px) {
   .top-bar { display: none; }
+   /*footer*/
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 6px; text-align: center; padding: 24px 0; }
+  
   .footer-bottom-credit {
     font-size: 11px;
     letter-spacing: 1px;
