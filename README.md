@@ -63,8 +63,8 @@ nova-university/
     │   ├── arch.html
     │   └── cine.html
     │
-    └── studentservices/
-        ├── scholarship.html
-        ├── admission.html
-        └── applynow.html
+    ├── studentservices/
+    │    ├── scholarship.html
+    ├── admission.html
+    └── applynow.html
 ```
