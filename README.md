@@ -33,38 +33,60 @@ The GUI is designed to be responsive, ensuring consistent user experience across
 
 **FOLDER ORGANISATION**
 ```
-nova-university/
+Nova/
 ├── index.html
 ├── README.md
-│
 ├── css/
-│   ├── main.css
-│   ├── index.css
+│   ├── Contact.css
+│   ├── about.css
 │   ├── admission.css
-│   ├── scholarships.css
-│   ├── applynow.css
 │   ├── allprog.css
-│   └── programs.css
-│
-├── js/
-│   ├── index.js
-│   ├── admission.js
-│   ├── applynow.js
-│   ├── allprog.js
-│   └── program.js
-│
+│   ├── applynow.css
+│   ├── area.css
+│   ├── calendar.css
+│   ├── campus.css
+│   ├── events.css
+│   ├── faculty.css
+│   ├── index.css
+│   ├── main.css
+│   ├── programs.css
+│   └── scholarships.css
+├── documents/
+│   └── GUI_Project_Synopsis.pdf
+├── html/
+│   ├── academics/
+│   │   ├── academic-areas.html
+│   │   └── calendar.html
+│   ├── pages/
+│   │   ├── about.html
+│   │   ├── alumni.html
+│   │   ├── campus.html
+│   │   ├── events.html
+│   │   └── faculty.html
+│   ├── programs/
+│   │   ├── allprog.html
+│   │   ├── arch.html
+│   │   ├── cine.html
+│   │   ├── cw.html
+│   │   └── sd.html
+│   ├── studentservices/
+│   │   └── scholarship.html
+│   ├── Contact.html
+│   ├── admission.html
+│   └── applynow.html
 ├── images/
 │   └── campus.jpg
-│
-└── html/
-    ├── programs/
-    │   ├── sd.html
-    │   ├── cw.html
-    │   ├── arch.html
-    │   └── cine.html
-    │
-    ├── studentservices/
-    │    ├── scholarship.html
-    ├── admission.html
-    └── applynow.html
+└── js/
+    ├── Contact.js
+    ├── about.js
+    ├── admission.js
+    ├── allprog.js
+    ├── applynow.js
+    ├── area.js
+    ├── calendar.js
+    ├── campus.js
+    ├── events.js
+    ├── faculty.js
+    ├── index.js
+    └── program.js
 ```
