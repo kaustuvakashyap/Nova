@@ -359,7 +359,6 @@ input:user-invalid, select:user-invalid {
 }
 @media (max-width: 1024px) {
     .programs-grid { grid-template-columns: repeat(2, 1fr); }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
     .dropdown { position: static; display: none; box-shadow: none; background: rgba(255,255,255,0.04); min-width: 100%; opacity: 1; visibility: visible; transform: none; }
     .dropdown.mobile-open { display: block; }
     .dropdown.mega { grid-template-columns: 1fr; padding: 12px; }
