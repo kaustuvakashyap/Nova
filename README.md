@@ -1,11 +1,10 @@
-# 🎓 University of Nova
+# University of Nova
 
 **A GUI-Centric Mock University Website**
 
 > *"Where Knowledge Meets Innovation"*
 
 **Authors:** Gargee Kakaty · Kaustuva Kashyap
-**Live Demo:** [gargee1989.github.io/Nova](https://gargee1989.github.io/Nova/)
 
 ---
 
