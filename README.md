@@ -1,92 +1,218 @@
-# Nova
-Authors: Gargee Kakaty and Kaustuva Kashyap
+# 🎓 University of Nova
 
-**INTRODUCTION**  
-This project (Nova) involves the design and development of a GUI centric mock university website using core web technologies. The website is designed to visually simulate a real university portal, emphasizing *layout structure, visual hierarchy, consistency, and intuitive navigation*. Rather than prioritizing backend functionality, the project concentrates on how users perceive, navigate, and interact with a digital academic environment. The GUI acts as the primary medium through which information such as courses, admissions, and institutional details are communicated, ensuring clarity, accessibility, and aesthetic balance. *Nova* acts as a practical sandbox for experimenting with UI/UX design and browser-based logic, all without external frameworks. 
+**A GUI-Centric Mock University Website**
 
-***The objectives of this project are:***  
-  1. To design a visually engaging, emotionally resonant and user-friendly GUI for an academic website.  
-  2. To apply GUI principles such as alignment, contrast, spacing, and consistency.  
-  3. To apply UI/UX principles that enhance user immersion and engagement.  
-  4. To strengthen frontend development skills using core web technologies.
-  5. To present academic, cultural, historical, and institutional information in a coherent and intuitive manner.
-  6. To simulate how a university communicates its mission, departments, campus life, alumni, and student community through digital media.
+> *"Where Knowledge Meets Innovation"*
 
-**METHODOLOGY**  
-The development process follows a *GUI-first approach*, where interface design decisions guide implementation.
-  1. GUI Design Phase
-      1. Identification of primary user flows (browsing courses, admissions, contact).
-      2. Creation of layout wireframes focusing on visual hierarchy
-      3. Selection of color schemes and typography suitable for educational platforms
+**Authors:** Gargee Kakaty · Kaustuva Kashyap
+**Live Demo:** [gargee1989.github.io/Nova](https://gargee1989.github.io/Nova/)
 
-  2. Implementation Phase  
-     *Tech Stack:*  
-      1. HTML5: Semantic structure for GUI components such as headers, navigation bars, cards, and forms  
-      2. CSS3: Styling and layout using Flexbox and Grid to ensure responsive and visually balanced interfaces  
-      3. JavaScript: Enables client-side interactivity for GUI elements including:  
-         1. Navigation menu toggling  
-         2. Interactive buttons and hover states  
-         3. Form validation feedback  
-         4. Dynamic content rendering    
-                  
-The GUI is designed to be responsive, ensuring consistent user experience across devices and screen sizes.
+---
 
-**FOLDER ORGANISATION**
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Objectives](#objectives)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Methodology](#methodology)
+- [File Organization](#file-organization)
+- [Pages Overview](#pages-overview)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Authors](#authors)
+
+---
+
+## Introduction
+
+**Nova** is a GUI-centric mock university website built using core web technologies — HTML5, CSS3, and vanilla JavaScript. The project simulates a real-world university portal with a strong emphasis on **layout structure**, **visual hierarchy**, **design consistency**, and **intuitive navigation**.
+
+Rather than prioritizing backend functionality, Nova concentrates on how users *perceive*, *navigate*, and *interact* with a digital academic environment. The GUI acts as the primary medium through which information — courses, admissions, institutional details, campus life, alumni, and faculty — is communicated with clarity, accessibility, and aesthetic balance.
+
+Nova serves as a practical sandbox for experimenting with UI/UX design and browser-based logic, all without external frameworks.
+
+---
+
+## Objectives
+
+1. Design a visually engaging, emotionally resonant, and user-friendly GUI for an academic website.
+2. Apply GUI principles such as alignment, contrast, spacing, and consistency.
+3. Apply UI/UX principles that enhance user immersion and engagement.
+4. Strengthen frontend development skills using core web technologies.
+5. Present academic, cultural, historical, and institutional information in a coherent and intuitive manner.
+6. Simulate how a university communicates its mission, departments, campus life, alumni, and student community through digital media.
+
+---
+
+## Features
+
+- **Multi-page architecture** — 15+ interconnected pages spanning academics, admissions, campus life, and more
+- **Responsive design** — Consistent experience across desktop and mobile screen sizes
+- **Dynamic navigation** — Dropdown menus, hamburger toggle for mobile, and smooth in-page anchoring
+- **Program pages** — Dedicated pages for B.Sc Software Development, M.A. Creative Writing, B.A. Architecture, and B.F.A. Cinematography
+- **Admissions section** — Requirements, process walkthrough, and tuition fee information
+- **Faculty profiles** — Meet-the-team section with professor cards
+- **Events calendar** — Upcoming university events with dates and descriptions
+- **Campus life showcase** — Student life, arts & culture, and athletics sections
+- **Alumni network** — Dedicated alumni page
+- **Scholarships page** — Student services and financial aid information
+- **Testimonials** — Student and faculty feedback carousel
+- **Apply Now flow** — Dedicated application page
+- **Contact page** — University contact details and inquiry form
+- **Animated statistics counter** — Live-counting enrollment figures on the homepage
+- **Marquee announcement bar** — Scrolling highlights reel
+- **Multilingual toggle (UI)** — Language selector in the navigation bar
+
+---
+
+## Tech Stack
+
+| Technology | Role |
+|---|---|
+| **HTML** | Semantic structure — headers, navbars, cards, forms, sections |
+| **CSS** | Styling via Flexbox & Grid; animations, hover states, responsive layouts |
+| **JavaScript** | Interactivity — menu toggling, counters, form validation, dynamic rendering |
+
+No external frameworks or libraries were used. Everything is written in pure, native web technology.
+
+---
+
+## Methodology
+
+Development followed a **GUI-first approach**, where interface design decisions guided implementation.
+
+### 1. GUI Design Phase
+- Identification of primary user flows: browsing programs, checking admissions, contacting the university
+- Creation of layout wireframes with a focus on visual hierarchy
+- Selection of color schemes and typography appropriate for educational platforms
+
+### 2. Implementation Phase
+- **HTML5** — Semantic, accessible markup for all GUI components
+- **CSS3** — Responsive layouts using Flexbox and Grid; custom animations and transitions
+- **JavaScript** — Client-side logic for:
+  - Navigation menu toggling
+  - Interactive buttons and hover states
+  - Form validation feedback
+  - Dynamic content rendering (animated counters, carousels)
+
+---
+
+## File Organization
+
 ```
 Nova/
-├── index.html
-├── README.md
+│
+├── index.html                        # Homepage
+│
 ├── css/
-│   ├── Contact.css
+│   ├── style.css                     # Global styles
 │   ├── about.css
+│   ├── academic-areas.css
 │   ├── admission.css
-│   ├── allprog.css
+│   ├── alumni.css
 │   ├── applynow.css
-│   ├── area.css
 │   ├── calendar.css
 │   ├── campus.css
+│   ├── contact.css
 │   ├── events.css
 │   ├── faculty.css
-│   ├── index.css
-│   ├── main.css
 │   ├── programs.css
-│   └── scholarships.css
-├── documents/
-│   └── GUI_Project_Synopsis.pdf
-├── html/
-│   ├── academics/
-│   │   ├── academic-areas.html
-│   │   └── calendar.html
-│   ├── pages/
-│   │   ├── about.html
-│   │   ├── alumni.html
-│   │   ├── campus.html
-│   │   ├── events.html
-│   │   └── faculty.html
-│   ├── programs/
-│   │   ├── allprog.html
-│   │   ├── arch.html
-│   │   ├── cine.html
-│   │   ├── cw.html
-│   │   └── sd.html
-│   ├── studentservices/
-│   │   └── scholarship.html
-│   ├── Contact.html
-│   ├── admission.html
-│   └── applynow.html
-├── images/
+│   └── scholarship.css
+│
+├── js/
+│   ├── script.js                     # Global scripts
+│   ├── about.js
+│   ├── admission.js
+│   ├── alumni.js
+│   ├── applynow.js
+│   ├── calendar.js
+│   ├── campus.js
+│   ├── contact.js
+│   ├── events.js
+│   ├── faculty.js
+│   ├── programs.js
+│   └── scholarship.js
+│
+├── images/                           # Local image assets
 │   └── campus.jpg
-└── js/
-    ├── Contact.js
-    ├── about.js
-    ├── admission.js
-    ├── allprog.js
-    ├── applynow.js
-    ├── area.js
-    ├── calendar.js
-    ├── campus.js
-    ├── events.js
-    ├── faculty.js
-    ├── index.js
-    └── program.js
+│
+└── html/
+    ├── admission.html
+    │
+    ├── pages/
+    │   ├── about.html
+    │   ├── faculty.html
+    │   ├── events.html
+    │   ├── campus.html
+    │   └── alumni.html
+    │
+    ├── academic/
+    │   ├── academic-areas.html
+    │   └── calendar.html
+    │
+    ├── programs/
+    │   ├── allprog.html
+    │   ├── sd.html                   # B.Sc Software Development
+    │   ├── cw.html                   # M.A. Creative Writing
+    │   ├── arch.html                 # B.A. Architecture Design
+    │   └── cine.html                 # B.F.A. Cinematography
+    │
+    ├── studentservices/
+    │   └── scholarship.html
+    │
+    ├── Contact.html
+    └── applynow.html
 ```
+
+---
+
+## Pages Overview
+
+| Page | Path | Description |
+|---|---|---|
+| Home | `index.html` | Landing page with hero, stats, programs, campus life, faculty, testimonials, and events |
+| About | `html/pages/about.html` | University history, mission, and values |
+| Faculty | `html/pages/faculty.html` | Faculty listings and profiles |
+| Events | `html/pages/events.html` | Upcoming university events |
+| Campus Life | `html/pages/campus.html` | Student life, arts, culture, and athletics |
+| Alumni | `html/pages/alumni.html` | Alumni network and stories |
+| Academic Areas | `html/academic/academic-areas.html` | Overview of colleges and departments |
+| Academic Calendar | `html/academic/calendar.html` | Semester schedule and key dates |
+| Admission | `html/admission.html` | Requirements, process, and tuition fees |
+| All Programs | `html/programs/allprog.html` | Full list of academic programs |
+| Software Development | `html/programs/sd.html` | B.Sc Software Development detail page |
+| Creative Writing | `html/programs/cw.html` | M.A. Creative Writing detail page |
+| Architecture | `html/programs/arch.html` | B.A. Architecture Design detail page |
+| Cinematography | `html/programs/cine.html` | B.F.A. Cinematography detail page |
+| Scholarships | `html/studentservices/scholarship.html` | Financial aid and scholarship information |
+| Contact | `html/Contact.html` | Contact form and university details |
+| Apply Now | `html/applynow.html` | Student application page |
+
+---
+
+## Getting Started
+
+No build tools or dependencies required. Simply clone the repository and open `index.html` in any modern browser.
+
+```bash
+git clone https://github.com/gargee1989/Nova.git
+cd Nova
+# Open index.html in your browser
+```
+
+Or visit the live deployment directly:
+🔗 [https://gargee1989.github.io/Nova/](https://gargee1989.github.io/Nova/)
+
+---
+
+## Authors
+
+| Name | Contributions |
+|---|---|
+| **Gargee Kakaty** | JavaScript integration, mobile compatibility, frontend implementation |
+| **Kaustuva Kashyap** | UI/UX design, frontend implementation |
+
+---
+
+*Copyright © 2026. University of Nova. Designed by Gargee & Kaustuva for academic excellence.*
