@@ -186,7 +186,9 @@ Nova/
 | Apply Now | `html/applynow.html` | Student application page |
 
 ---
+## Screenshots
 
+--
 ## Getting Started
 
 No build tools or dependencies required. Simply clone the repository and open `index.html` in any modern browser.
