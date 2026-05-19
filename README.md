@@ -187,8 +187,18 @@ Nova/
 
 ---
 ## Screenshots
+![Homepage](documents/screenshots/homepage.png)
+![Navbar & Footer](documents/screenshots/navbar_footer.png)
+![About](documents/screenshots/about.png)
+![Programs](documents/screenshots/programs.png)
+![Curriculum](documents/screenshots/curriculum.png)
+![Faculty](documents/screenshots/faculty.png)
+![Events](documents/screenshots/event.png)
+![Admission Requirements](documents/screenshots/add_requirement.png)
+![Tuition Fees](documents/screenshots/fees.png)
+![Testimonials](documents/screenshots/testimonial.png)
 
---
+---
 ## Getting Started
 
 No build tools or dependencies required. Simply clone the repository and open `index.html` in any modern browser.
