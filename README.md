@@ -1,6 +1,6 @@
 # University of Nova
 
-**A GUI-Centric Mock University Website**
+**A GUI-Centric Mock University Website** <br>
 **Authors:** Gargee Kakaty · Kaustuva Kashyap
 
 ---
