@@ -46,19 +46,9 @@ Nova serves as a practical sandbox for experimenting with UI/UX design and brows
 - **Multi-page architecture** — 15+ interconnected pages spanning academics, admissions, campus life, and more
 - **Responsive design** — Consistent experience across desktop and mobile screen sizes
 - **Dynamic navigation** — Dropdown menus, hamburger toggle for mobile, and smooth in-page anchoring
-- **Program pages** — Dedicated pages for B.Sc Software Development, M.A. Creative Writing, B.A. Architecture, and B.F.A. Cinematography
-- **Admissions section** — Requirements, process walkthrough, and tuition fee information
-- **Faculty profiles** — Meet-the-team section with professor cards
-- **Events calendar** — Upcoming university events with dates and descriptions
-- **Campus life showcase** — Student life, arts & culture, and athletics sections
-- **Alumni network** — Dedicated alumni page
-- **Scholarships page** — Student services and financial aid information
-- **Testimonials** — Student and faculty feedback carousel
 - **Apply Now flow** — Dedicated application page
-- **Contact page** — University contact details and inquiry form
 - **Animated statistics counter** — Live-counting enrollment figures on the homepage
 - **Marquee announcement bar** — Scrolling highlights reel
-- **Multilingual toggle (UI)** — Language selector in the navigation bar
 
 ---
 
