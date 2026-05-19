@@ -1,9 +1,6 @@
 # University of Nova
 
 **A GUI-Centric Mock University Website**
-
-> *"Where Knowledge Meets Innovation"*
-
 **Authors:** Gargee Kakaty · Kaustuva Kashyap
 
 ---
