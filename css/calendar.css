@@ -142,23 +142,6 @@
 .deadline-card p { font-size:13px; color:rgba(255,255,255,0.45); line-height:1.55; }
 .deadline-card .dc-icon { font-size:22px; color:rgba(201,168,76,0.4); margin-bottom:14px; }
 
-/* ========== FOOTER ========== */
-footer { background:var(--navy-deep); padding:80px 0 0; color:rgba(255,255,255,0.7); }
-.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:48px; }
-.footer-brand p { font-size:14px; line-height:1.8; margin:18px 0 24px; color:rgba(255,255,255,0.55); }
-.footer-socials { display:flex; gap:10px; }
-.footer-socials a { width:36px; height:36px; border-radius:50%; border:1px solid rgba(255,255,255,0.15); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.6); font-size:14px; text-decoration:none; transition:all 0.25s; }
-.footer-socials a:hover { background:var(--gold); border-color:var(--gold); color:var(--navy); }
-.footer-col h6 { font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:20px; font-weight:600; }
-.footer-col ul { list-style:none; }
-.footer-col ul li { margin-bottom:10px; }
-.footer-col ul li a { color:rgba(255,255,255,0.6); text-decoration:none; font-size:14px; transition:all 0.2s; display:flex; align-items:center; gap:6px; }
-.footer-col ul li a:hover { color:var(--gold-light); padding-left:4px; }
-.footer-col ul li a::before { content:'→'; font-size:11px; color:var(--gold); }
-.footer-bottom { margin-top:60px; padding:20px 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; align-items:center; font-size:13px; color:rgba(255,255,255,0.4); }
-.footer-bottom a { color:var(--gold); text-decoration:none; }
-.divider { border:none; border-top:1px solid var(--light-gray); margin:36px 0; }
-
 /* ========== RESPONSIVE ========== */
 @media (max-width:1024px) {
   .page-hero-bg { display:none; }
