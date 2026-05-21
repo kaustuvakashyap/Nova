@@ -61,7 +61,7 @@
 
 /* ========== VISIT US ========== */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
-  .nova-visit { font-family: 'DM Sans', sans-serif; background: var(--text-dark); color: #fff; padding: 80px 0; }
+  .nova-visit { font-family: 'DM Sans', sans-serif; background: var(--navy); color: #fff; padding: 80px 0; }
   .nova-visit .inner { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
   .nova-visit .grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 72px; align-items: start; }
   .nova-visit .label { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: #e8c97a; font-weight: 700; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
