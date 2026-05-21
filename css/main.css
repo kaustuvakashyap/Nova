@@ -28,7 +28,7 @@ body {
 
 /* ========== TOP BAR ========== */
 .top-bar {
-  background: var(--navy-deep);
+  background: var(--navy);
   color: rgba(255,255,255,0.75);
   font-size: 13px;
   padding: 9px 0;

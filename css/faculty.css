@@ -74,7 +74,7 @@
   .faculty-stats { background: #fff; box-shadow: 0 -4px 60px rgba(0,0,0,0.12); position: relative; z-index: 3; }
   .faculty-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
   .fstat-item {
-    padding: 32px 28px; border-right: 1px solid var(--light-gray);
+    padding: 32px 28px; border: none;
     text-align: center; position: relative; overflow: hidden; transition: background 0.3s;
   }
   .fstat-item:last-child { border-right: none; }
@@ -287,6 +287,14 @@
     .leadership-grid, .join-cta-inner { grid-template-columns: 1fr; }
     .leadership-img { display: none; }
   }
+  @media (max-width: 1024px) {
+    .programs-grid { grid-template-columns: repeat(2, 1fr); }
+    .dropdown { position: static; display: none; box-shadow: none; background: rgba(255,255,255,0.04); min-width: 100%; opacity: 1; visibility: visible; transform: none; }
+    .dropdown.mobile-open { display: block; }
+    .dropdown.mega { grid-template-columns: 1fr; padding: 12px; }
+    .dropdown.mega.mobile-open { display: grid; }
+    .nav-menu > li { display: block; width: 100%; }
+}
   @media (max-width: 640px) {
     .faculty-stats-grid, .dept-grid, .prof-grid, .faculty-list-grid { grid-template-columns: 1fr; }
     .filter-bar { flex-direction: column; }

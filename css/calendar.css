@@ -26,12 +26,6 @@
 .hero-stat-num { font-family:'Cormorant Garamond',serif; font-size:38px; font-weight:700; color:var(--gold-light); line-height:1; }
 .hero-stat-label { font-size:12px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.45); margin-top:4px; }
 
-/* ========== MARQUEE ========== */
-.marquee-wrap { background:var(--gold); padding:14px 0; overflow:hidden; }
-.marquee-track { display:flex; animation:marquee 28s linear infinite; white-space:nowrap; }
-.marquee-track span { display:inline-flex; align-items:center; gap:18px; padding:0 24px; font-size:13px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--navy); }
-.marquee-track span i { font-size:14px; }
-@keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
 
 /* ========== FILTER TABS ========== */
 .filter-section { background:#fff; border-bottom:1px solid var(--light-gray); padding:0; position:sticky; top:72px; z-index:90; }
@@ -167,16 +161,22 @@ footer { background:var(--navy-deep); padding:80px 0 0; color:rgba(255,255,255,0
 
 /* ========== RESPONSIVE ========== */
 @media (max-width:1024px) {
-  .nav-menu > li > a { padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.07); font-size:16px; }
   .page-hero-bg { display:none; }
   .calendar-layout { grid-template-columns:1fr; }
   .dark-band-inner { grid-template-columns:1fr; gap:40px; }
   .filter-inner { flex-wrap:wrap; }
   .filter-tabs { overflow-x:auto; }
 }
+@media (max-width: 1024px) {
+    .programs-grid { grid-template-columns: repeat(2, 1fr); }
+    .dropdown { position: static; display: none; box-shadow: none; background: rgba(255,255,255,0.04); min-width: 100%; opacity: 1; visibility: visible; transform: none; }
+    .dropdown.mobile-open { display: block; }
+    .dropdown.mega { grid-template-columns: 1fr; padding: 12px; }
+    .dropdown.mega.mobile-open { display: grid; }
+    .nav-menu > li { display: block; width: 100%; }
+}
 @media (max-width:640px) {
   .deadlines-grid { grid-template-columns:1fr; }
-  .footer-bottom { flex-direction:column; gap:8px; text-align:center; }
   .top-bar .container { flex-direction:column; gap:6px; }
   .hero-stats { gap:24px; flex-wrap:wrap; }
   .event-row { grid-template-columns:100px 1fr; }

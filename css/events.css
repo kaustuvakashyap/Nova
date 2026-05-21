@@ -80,7 +80,7 @@
 .stat-item{
   padding:36px 20px;
   text-align:center;
-  border-right:1px solid var(--light-gray);
+  border-right:none;
   transition: background 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
