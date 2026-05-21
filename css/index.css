@@ -59,7 +59,7 @@
 .stats-bar { background: #fff; box-shadow: 0 -4px 60px rgba(0,0,0,0.12); position: relative; z-index: 3; }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
 .stat-item {
-  padding: 32px 28px; border-right: 1px solid var(--light-gray);
+  padding: 32px 28px; border: none;
   text-align: center; position: relative; overflow: hidden;
   transition: background 0.3s;
 }
@@ -98,7 +98,7 @@
 /* ========== FACULTY PROGRAMS ========== */
 .faculty { padding: 100px 0; background: #fff; }
 .faculty-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.faculty-card { border: 1px solid var(--light-gray); border-radius: 6px; overflow: hidden; transition: all 0.3s; position: relative; }
+.faculty-card { border: 1px solid var(--text-muted); border-radius: 6px; overflow: hidden; transition: all 0.3s; position: relative; }
 .faculty-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(14,26,58,0.12); border-color: var(--gold); }
 .faculty-card-inner { padding: 32px 28px; }
 .faculty-num { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 700; color: rgba(14,26,58,0.06); line-height: 1; margin-bottom: -10px; }
