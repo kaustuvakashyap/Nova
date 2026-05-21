@@ -1,12 +1,3 @@
-// Navbar scroll
-  window.addEventListener('scroll', () => {
-    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
-  });
-
-  // Mobile menu
-  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('navMenu').classList.toggle('open'));
-  document.getElementById('navClose').addEventListener('click', () => document.getElementById('navMenu').classList.remove('open'));
-
   // ── HERO ENTRANCE ─────────────────────────────────────────────────────────
   // Wrapped in a function so it re-runs on back/forward navigation (bfcache)
   function runHeroEntrance() {

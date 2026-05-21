@@ -36,13 +36,16 @@
   position: relative; overflow: hidden;
 }
 .page-hero::before {
-  content: ''; position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1600&q=80') center/cover no-repeat;
-  opacity: .12;
+    content: '';
+    position: absolute; inset: 0;
+    background: url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80') center/cover no-repeat;
+    opacity: 0.08;
 }
 .page-hero::after {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(120deg, var(--navy-deep) 40%, rgba(14,26,58,.65));
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 .page-hero-inner { position: relative; z-index: 2; }
 

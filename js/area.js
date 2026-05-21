@@ -1,12 +1,3 @@
-// ── NAVBAR SCROLL ─────────────────────────────────────────────────────────
-window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
-});
-
-// ── MOBILE MENU ───────────────────────────────────────────────────────────
-document.getElementById('hamburger').addEventListener('click', () => document.getElementById('navMenu').classList.toggle('open'));
-document.getElementById('navClose').addEventListener('click', () => document.getElementById('navMenu').classList.remove('open'));
-
 // ── HERO ENTRANCE ─────────────────────────────────────────────────────────
 function runHeroEntrance() {
   const heroEls = document.querySelectorAll('.page-hero-content > *');

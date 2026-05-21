@@ -25,6 +25,13 @@
   text-transform: uppercase; padding: 7px 16px; border-radius: 50px;
   margin-bottom: 28px;
 }
+.hero-ribbon {
+  position: absolute;
+  display: none;
+  z-index: 3;
+  pointer-events: none;
+  filter: invert(72%) sepia(48%) saturate(450%) hue-rotate(5deg) brightness(95%);
+}
 .hero h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(62px, 8vw, 110px);
@@ -187,6 +194,12 @@
 /* ========== INDEX RESPONSIVE ========== */
 @media (max-width: 1024px) {
   .hero-right-img { display: none; }
+  .hero-ribbon { 
+    display: block; 
+    opacity: 0.08;
+    right: -300px;
+    width: 900px;
+  }
   .about-grid, .campus-header { grid-template-columns: 1fr; }
   .stats-grid, .faculty-grid, .prof-grid, .campus-cards, .events-grid { grid-template-columns: repeat(2, 1fr); }
   .testi-card { min-width: 100%; }
@@ -202,5 +215,11 @@
 @media (max-width: 640px) {
   .stats-grid, .faculty-grid, .prof-grid, .campus-cards, .events-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 56px; }
+  .hero-ribbon { 
+    display: block; 
+    opacity: 0.05; 
+    right: -300px;
+    width: 900px;
+  }
   .testi-card { min-width: 100%; }
 }
