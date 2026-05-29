@@ -209,7 +209,7 @@ Or visit the live deployment directly:
 | Name | Contributions |
 |---|---|
 | **Gargee Kakaty** | JavaScript integration, mobile compatibility, frontend implementation |
-| **Kaustuva Kashyap** | UI/UX design, frontend implementation |
+| **Kaustuva Kashyap** | UI/UX design, frontend implementation, documentation |
 
 ---
 
