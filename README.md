@@ -179,7 +179,7 @@ Nova/
 ## Screenshots
 ![Homepage](documents/screenshots/homepage.png)
 ![Navbar & Footer](documents/screenshots/navbar_footer.png)
-![About](documents/screenshots/about.png)
+![About](documents/screenshots/about_2.png)
 ![Programs](documents/screenshots/programs.png)
 ![Curriculum](documents/screenshots/curriculum.png)
 ![Faculty](documents/screenshots/faculty.png)
