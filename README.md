@@ -177,16 +177,16 @@ Nova/
 
 ---
 ## Screenshots
-![Homepage](documents/screenshots/homepage.png)
-![Navbar & Footer](documents/screenshots/navbar_footer.png)
+![Homepage](documents/screenshots/home_2.png)
+![Navbar & Footer](documents/screenshots/dropdown_2.png)
 ![About](documents/screenshots/about_2.png)
-![Programs](documents/screenshots/programs.png)
-![Curriculum](documents/screenshots/curriculum.png)
-![Faculty](documents/screenshots/faculty.png)
-![Events](documents/screenshots/event.png)
-![Admission Requirements](documents/screenshots/add_requirement.png)
-![Tuition Fees](documents/screenshots/fees.png)
-![Testimonials](documents/screenshots/testimonial.png)
+![Programs](documents/screenshots/programs_2.png)
+![Curriculum](documents/screenshots/curriculum_2.png)
+![Faculty](documents/screenshots/faculty_2.png)
+![Events](documents/screenshots/events_2.png)
+![Admission Requirements](documents/screenshots/req_2.png)
+![Tuition Fees](documents/screenshots/fee_2.png)
+![Testimonials](documents/screenshots/testimonials_2.png)
 
 ---
 ## Getting Started
