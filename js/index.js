@@ -69,22 +69,24 @@ statNums.forEach(n => statObs.observe(n));
 
 // Testimonial slider
 const track = document.getElementById('testiTrack');
-const cards = Array.from(track.children);
-let current = 0;
-let perView = window.innerWidth < 768 ? 1 : 2;
+if (track) {
+  const cards = Array.from(track.children);
+  let current = 0;
+  let perView = window.innerWidth < 768 ? 1 : 2;
 
-function slideTo(idx) {
-const max = cards.length - perView;
-current = Math.max(0, Math.min(idx, max));
-const cardW = cards[0].getBoundingClientRect().width + 24;
-track.style.transform = `translateX(-${current * cardW}px)`;
+  function slideTo(idx) {
+    const max = cards.length - perView;
+    current = Math.max(0, Math.min(idx, max));
+    const cardW = cards[0].getBoundingClientRect().width + 24;
+    track.style.transform = `translateX(-${current * cardW}px)`;
+  }
+
+  document.getElementById('testiNext').addEventListener('click', () => slideTo(current + 1));
+  document.getElementById('testiPrev').addEventListener('click', () => slideTo(current - 1));
+  window.addEventListener('resize', () => {
+    perView = window.innerWidth < 768 ? 1 : 2;
+    slideTo(0);
+  });
+
+  slideTo(0);
 }
-
-document.getElementById('testiNext').addEventListener('click', () => slideTo(current + 1));
-document.getElementById('testiPrev').addEventListener('click', () => slideTo(current - 1));
-window.addEventListener('resize', () => {
-perView = window.innerWidth < 768 ? 1 : 2;
-slideTo(0);
-});
-
-slideTo(0);
