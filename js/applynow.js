@@ -85,28 +85,11 @@ function updateProgress() {
   document.getElementById('progress-bar').style.width = pct + '%';
 }
 
-// Scroll progress
-window.addEventListener('scroll', () => {
-  const scrolled = window.scrollY;
-  const total = document.body.scrollHeight - window.innerHeight;
-  const base = ((currentStep - 1) / 4) * 100;
-  const stepContrib = (1 / 4) * (scrolled / total) * 100;
-  if (currentStep < 5) {
-    document.getElementById('progress-bar').style.width = Math.min(base + stepContrib, (currentStep / 4) * 100) + '%';
-  }
-
-  // navbar scroll
-  const nav = document.getElementById('navbar');
-  if (scrolled > 80) nav.classList.add('scrolled');
-  else nav.classList.remove('scrolled');
-});
-
-// Reveal on scroll
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
+const applyReveals = document.querySelectorAll('.reveal');
+const applyObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
-reveals.forEach(el => observer.observe(el));
+applyReveals.forEach(el => applyObserver.observe(el));
 
 // Radio opt active state
 document.querySelectorAll('.radio-opt').forEach(opt => {
@@ -119,12 +102,10 @@ document.querySelectorAll('.radio-opt').forEach(opt => {
   });
 });
 
-// Add this at the bottom of your applynow.js
 document.querySelectorAll('input, select, textarea').forEach(field => {
   field.addEventListener('input', () => {
     if (field.checkValidity()) {
       field.classList.remove('field-error');
-      // If you are using inline styles from previous steps:
       field.style.borderColor = ""; 
     }
   });
