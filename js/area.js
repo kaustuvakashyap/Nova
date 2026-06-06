@@ -64,17 +64,6 @@ window.addEventListener('pageshow', (e) => {
   if (e.persisted) runHeroEntrance();
 });
 
-// ── INTERSECTION OBSERVER ─────────────────────────────────────────────────
-const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
-      revealObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-
 // ── SCROLL REVEAL — existing .reveal elements ─────────────────────────────
 const delayMap = {
   'reveal-delay-1': 80,
@@ -104,7 +93,7 @@ const autoTargets = [
 
 autoTargets.forEach(({ sel, stagger }) => {
   document.querySelectorAll(sel).forEach((el, i) => {
-    if (el.classList.contains('reveal') || el.closest('[data-reveal-init]')) return;
+    if (el.classList.contains('reveal') || el.closest('[data-reveal-init]') || el.classList.contains('marquee-wrap')) return;
     el.dataset.revealInit = '1';
     el.style.opacity = '0';
     el.style.transform = 'translateY(22px)';
@@ -114,7 +103,7 @@ autoTargets.forEach(({ sel, stagger }) => {
 });
 
 // ── COUNTER ANIMATION ─────────────────────────────────────────────────────
-function animateCount(el, target) {
+function areaanimateCount(el, target) {
   let current = 0;
   const step = Math.ceil(target / 60);
   const timer = setInterval(() => {
@@ -127,7 +116,7 @@ function animateCount(el, target) {
 const areastatObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      animateCount(e.target, parseInt(e.target.dataset.target));
+      areaanimateCount(e.target, parseInt(e.target.dataset.target));
       areastatObs.unobserve(e.target);
     }
   });
