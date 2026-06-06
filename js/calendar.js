@@ -117,8 +117,18 @@ const highlightDates = {
   '2026-5-25': 'has-event', 
   '2026-5-29': 'has-event', 
   '2026-5-31': 'has-event', 
-  '2026-6-15': 'has-event', 
-  '2026-7-4':  'highlight',    
+  '2026-6-1': 'exam', 
+  '2026-6-2': 'break',
+  '2026-6-3': 'exam',
+  '2026-6-4': 'break',
+  '2026-6-5': 'exam',
+  '2026-6-6': 'ceremony',
+  '2026-6-7': 'ceremony',
+  '2026-6-8': 'exam',
+  '2026-6-9': 'exam',
+  '2026-6-11': 'exam',
+  '2026-6-12': 'deadline',
+  '2026-7-13': 'highlight',    
 };
 // more events can be added in similar manner like: '2026-6-15': 'has-event'  or  '2026-6-20': 'highlight'
 
