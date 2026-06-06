@@ -104,7 +104,7 @@ setTimeout(() => {
         ).indexOf(e.target);
         
         setTimeout(() => {
-          areaAnimateCount(e.target, parseInt(e.target.dataset.target));
+          areaanimateCount(e.target, parseInt(e.target.dataset.target));
         }, index * 200); // stagger between each stat
         
         areastatObs.unobserve(e.target);
