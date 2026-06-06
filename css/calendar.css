@@ -119,10 +119,26 @@
 
 /* CTA card */
 .sidebar-cta { background:var(--navy); border-radius:8px; padding:28px 24px; text-align:center; }
-.sidebar-cta i { font-size:28px; color:var(--gold); margin-bottom:14px; display:block; }
+.sidebar-cta i { font-size:28px; color:var(--navy); margin-bottom:14px; display:block; }
 .sidebar-cta h4 { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:700; color:#fff; margin-bottom:10px; }
 .sidebar-cta p { font-size:13px; color:rgba(255,255,255,0.55); line-height:1.65; margin-bottom:20px; }
-.sidebar-cta a { display:inline-flex; align-items:center; gap:8px; background:var(--gold); color:var(--navy); padding:12px 24px; border-radius:4px; font-size:13px; font-weight:700; text-decoration:none; transition:background 0.2s; }
+.sidebar-cta a { 
+  display:inline-flex; 
+  align-items:center; 
+  gap:8px; 
+  background:var(--gold); 
+  color:var(--navy); 
+  padding:12px 24px; 
+  border-radius:4px; 
+  font-size:13px; 
+  font-weight:700; 
+  text-decoration:none; 
+  transition:background 0.2s; 
+  width: 100%;               
+  justify-content: center;   
+  box-sizing: border-box;
+  white-space: nowrap;  
+}
 .sidebar-cta a:hover { background:var(--gold-light); }
 
 /* ========== IMPORTANT DATES DARK BAND ========== */
