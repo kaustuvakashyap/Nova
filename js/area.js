@@ -21,13 +21,6 @@ function runHeroEntrance() {
     deco.style.transform = 'translateX(60px)';
   }
 
-  const marquee = document.querySelector('.marquee-wrap');
-  if (marquee) {
-    marquee.style.transition = 'none';
-    marquee.style.opacity = '0';
-    marquee.style.transform = 'translateY(12px)';
-  }
-
   // Double rAF — force repaint before animating
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
@@ -47,11 +40,6 @@ function runHeroEntrance() {
         deco.style.transition = 'opacity 1.8s cubic-bezier(0.22,1,0.36,1) 600ms, transform 1.8s cubic-bezier(0.22,1,0.36,1) 600ms';
         deco.style.opacity = '1';
         deco.style.transform = 'translateX(0)';
-      }
-
-      if (marquee) {
-        marquee.style.transition = 'opacity 0.5s cubic-bezier(0.22,1,0.36,1) 400ms, transform 0.5s cubic-bezier(0.22,1,0.36,1) 400ms';        marquee.style.opacity = '1';
-        marquee.style.transform = 'translateY(0)';
       }
     });
   });
