@@ -94,6 +94,8 @@
 @media (max-width:1024px) {
   .page-hero-bg { display:none; }
   .contact-grid, .map-strip-inner { grid-template-columns:1fr; gap:48px; }
+  .nova-visit .grid { grid-template-columns:1fr; gap:40px; }
+  .nova-visit h2 { font-size:36px; }
 }
 @media (max-width: 1024px) {
   .programs-grid { grid-template-columns: repeat(2, 1fr); }
@@ -106,4 +108,10 @@
 @media (max-width:640px) {
   .depts-grid { grid-template-columns:1fr; }
   .top-bar .container { flex-direction:column; gap:6px; }
+  .nova-visit { padding:56px 0; }
+  .nova-visit .inner { padding:0 20px; }
+  .nova-visit h2 { font-size:32px; }
+  .nova-visit .tour-slot { flex-wrap:wrap; gap:12px; }
+  .nova-visit .tour-time { text-align:left; }
 }
+
