@@ -52,6 +52,27 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 reveals.forEach(r => observer.observe(r));
 
+// Counter animation
+function animateCount(el, target) {
+let current = 0;
+const step = Math.ceil(target / 60);
+const timer = setInterval(() => {
+    current = Math.min(current + step, target);
+    el.textContent = current.toLocaleString();
+    if(current >= target) clearInterval(timer);
+}, 28);
+}
+const statNums = document.querySelectorAll('.stat-num[data-target]');
+const statObs = new IntersectionObserver((entries) => {
+entries.forEach(e => {
+    if(e.isIntersecting) {
+    animateCount(e.target, parseInt(e.target.dataset.target));
+    statObs.unobserve(e.target);
+    }
+});
+}, { threshold: 0.5 });
+statNums.forEach(n => statObs.observe(n));
+
 // Testimonial slider
 const track = document.getElementById('testiTrack');
 if (track) {

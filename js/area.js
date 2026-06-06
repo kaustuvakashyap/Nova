@@ -84,31 +84,3 @@ autoTargets.forEach(({ sel, stagger }) => {
   });
 });
 
-// ── COUNTER ANIMATION ─────────────────────────────────────────────────────
-function areaanimateCount(el, target) {
-  let current = 0;
-  const step = Math.ceil(target / 60);
-  const timer = setInterval(() => {
-    current = Math.min(current + step, target);
-    el.textContent = current.toLocaleString();
-    if (current >= target) clearInterval(timer);
-  }, 28);
-}
-
-const areastatObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const index = Array.from(
-        document.querySelectorAll('.stat-num[data-target]')
-      ).indexOf(e.target);
-
-      setTimeout(() => {
-        areaanimateCount(e.target, parseInt(e.target.dataset.target));
-      }, index * 200);
-
-      areastatObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('.stat-num[data-target]').forEach(n => areastatObs.observe(n));
