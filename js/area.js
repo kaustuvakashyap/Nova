@@ -64,23 +64,6 @@ window.addEventListener('pageshow', (e) => {
   if (e.persisted) runHeroEntrance();
 });
 
-// ── SCROLL REVEAL — existing .reveal elements ─────────────────────────────
-const delayMap = {
-  'reveal-delay-1': 80,
-  'reveal-delay-2': 160,
-  'reveal-delay-3': 240,
-  'reveal-delay-4': 320,
-};
-
-document.querySelectorAll('.reveal').forEach(el => {
-  let delay = 0;
-  el.classList.forEach(cls => { if (delayMap[cls]) delay = delayMap[cls]; });
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(26px)';
-  el.style.transition = `opacity 0.72s cubic-bezier(0.22,1,0.36,1) ${delay}ms, transform 0.72s cubic-bezier(0.22,1,0.36,1) ${delay}ms`;
-  revealObs.observe(el);
-});
-
 // ── AUTO-TAG — area-specific grid children without .reveal ────────────────
 const autoTargets = [
   { sel: '.area-card',        stagger: 80  },
