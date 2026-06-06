@@ -206,6 +206,8 @@ Or visit the live deployment directly:
 
 ---
 ## Future Scopes
+The future scopes of this project include:
+
 1. Backend Integration.
 2. User Authentication & Portal System.
 3. Database-Driven Content.
