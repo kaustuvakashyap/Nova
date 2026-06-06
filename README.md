@@ -207,15 +207,12 @@ Or visit the live deployment directly:
 ---
 ## Future Scopes
 1. Backend Integration.
-	2. User Authentication & Portal System.
-	3. Database-Driven Content.
-	4. Search Functionality.
-
-            5. Progressive Web Application (PWA) Conversion.
-
-            6. API Integrations.<img width="1248" height="763" alt="image" src="https://github.com/user-attachments/assets/b56943bf-cd8e-4f05-9e3b-6692ef554261" />
-
-
+2. User Authentication & Portal System.
+3. Database-Driven Content.
+4. Search Functionality.
+5. Progressive Web Application (PWA) Conversion.
+6. API Integrations.
+---
 
 ## Authors
 
