@@ -10,8 +10,6 @@ function runHeroEntrance() {
   if (heroBg) { heroBg.style.transition = 'none'; heroBg.style.opacity = '0'; heroBg.style.transform = 'scale(1.08)'; }
   const deco = document.querySelector('.page-hero-deco');
   if (deco)   { deco.style.transition = 'none'; deco.style.opacity = '0'; deco.style.transform = 'translateX(60px)'; }
-  const marquee = document.querySelector('.marquee-wrap');
-  if (marquee){ marquee.style.transition = 'none'; marquee.style.opacity = '0'; marquee.style.transform = 'translateY(12px)'; }
 
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
@@ -21,7 +19,6 @@ function runHeroEntrance() {
       });
       if (heroBg) { heroBg.style.transition = 'opacity 1.8s cubic-bezier(0.22,1,0.36,1), transform 1.8s cubic-bezier(0.22,1,0.36,1)'; heroBg.style.opacity = '0.3'; heroBg.style.transform = 'scale(1)'; }
       if (deco)   { deco.style.transition = 'opacity 1.8s cubic-bezier(0.22,1,0.36,1) 600ms, transform 1.8s cubic-bezier(0.22,1,0.36,1) 600ms'; deco.style.opacity = '1'; deco.style.transform = 'translateX(0)'; }
-      if (marquee){ marquee.style.transition = 'opacity 1.0s cubic-bezier(0.22,1,0.36,1) 900ms, transform 1.0s cubic-bezier(0.22,1,0.36,1) 900ms'; marquee.style.opacity = '1'; marquee.style.transform = 'translateY(0)'; }
     });
   });
 }
@@ -72,24 +69,6 @@ const revealObs = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-
-const scrollTargets = [
-  { sel: '.stats-grid .stat-item',       stagger: 80  },
-  { sel: '.featured-grid > *',           stagger: 120 },
-  { sel: '.section-header',              stagger: 0   },
-  { sel: '.types-grid .type-card',       stagger: 90  },
-  { sel: '.events-grid .event-card',     stagger: 110 },
-  { sel: '.cta-banner > .container > *', stagger: 100 },
-];
-
-scrollTargets.forEach(({ sel, stagger }) => {
-  document.querySelectorAll(sel).forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(26px)';
-    el.style.transition = `opacity 0.72s cubic-bezier(0.22,1,0.36,1) ${i * stagger}ms, transform 0.72s cubic-bezier(0.22,1,0.36,1) ${i * stagger}ms`;
-    revealObs.observe(el);
-  });
-});
 
 // ── FOOTER REVEAL ─────────────────────────────────────────────
 const reveals = document.querySelectorAll('.reveal');

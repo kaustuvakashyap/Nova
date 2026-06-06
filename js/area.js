@@ -51,3 +51,24 @@ window.addEventListener('pageshow', (e) => {
   if (e.persisted) runHeroEntrance();
 });
 
+// ── SCROLL REVEAL ─────────────────────────────────────────────
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+// ── FOOTER REVEAL ─────────────────────────────────────────────
+const reveals = document.querySelectorAll('.reveal');
+if (reveals.length) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(r => revealObserver.observe(r));
+}
