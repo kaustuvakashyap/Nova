@@ -124,16 +124,16 @@ function animateCount(el, target) {
   }, 28);
 }
 
-const statObs = new IntersectionObserver((entries) => {
+const facultystatObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       animateCount(e.target, parseInt(e.target.dataset.target));
-      statObs.unobserve(e.target);
+      facultystatObs.unobserve(e.target);
     }
   });
 }, { threshold: 0.5 });
 
-document.querySelectorAll('.stat-num[data-target]').forEach(n => statObs.observe(n));
+document.querySelectorAll('.stat-num[data-target]').forEach(n => facultystatObs.observe(n));
 
 // ── DEPARTMENT FILTER ─────────────────────────────────────────────────────
 function filterFaculty(btn, dept) {
