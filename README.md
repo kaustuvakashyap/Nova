@@ -33,6 +33,8 @@ Nova serves as a practical sandbox for experimenting with UI/UX design and brows
 ## Objectives
 The primary objectives of this project are:
 
+1.	To design a visually engaging, emotionally resonant, and user-friendly graphical user interface for an academic web platform, incorporating fundamental design principles such as alignment, contrast, spacing, typography hierarchy, and visual consistency across all pages and components.
+
 
 
 
