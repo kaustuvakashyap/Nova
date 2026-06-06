@@ -51,24 +51,3 @@ window.addEventListener('pageshow', (e) => {
   if (e.persisted) runHeroEntrance();
 });
 
-// ── AUTO-TAG — area-specific grid children without .reveal ────────────────
-const autoTargets = [
-  { sel: '.area-card',        stagger: 80  },
-  { sel: '.program-card',     stagger: 80  },
-  { sel: '.stat-card',        stagger: 90  },
-  { sel: '.feature-item',     stagger: 80  },
-  { sel: '.highlight-card',   stagger: 70  },
-  { sel: '.info-card',        stagger: 80  },
-];
-
-autoTargets.forEach(({ sel, stagger }) => {
-  document.querySelectorAll(sel).forEach((el, i) => {
-    if (el.classList.contains('reveal') || el.closest('[data-reveal-init]') || el.classList.contains('marquee-wrap')) return;
-    el.dataset.revealInit = '1';
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(22px)';
-    el.style.transition = `opacity 0.68s cubic-bezier(0.22,1,0.36,1) ${i * stagger}ms, transform 0.68s cubic-bezier(0.22,1,0.36,1) ${i * stagger}ms`;
-    observer.observe(el);
-  });
-});
-
