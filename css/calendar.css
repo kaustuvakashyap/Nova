@@ -93,10 +93,10 @@
 .mini-cal-date.has-event { background:rgba(201,168,76,0.15); color:var(--navy); font-weight:600; }
 .mini-cal-date.today { background:var(--navy); color:#fff; font-weight:700; border-radius:50%; }
 .mini-cal-date.highlight { background:var(--gold); color:var(--navy); font-weight:700; border-radius:50%; }
-.mini-cal-date.exam     { background: rgba(14,26,58,0.15);  color: var(--navy);  font-weight:600; border-radius:4px; }
+.mini-cal-date.exam     { background: rgba(14,26,58, 0.50);  color: white;  font-weight:600; border-radius:4px; }
 .mini-cal-date.deadline { background: rgba(220,38,38,0.15); color: #b91c1c;      font-weight:600; border-radius:4px; }
 .mini-cal-date.break    { background: rgba(5,150,105,0.15); color: #047857;      font-weight:600; border-radius:4px; }
-.mini-cal-date.ceremony { background: rgba(124,58,237,0.15);color: #6d28d9;      font-weight:600; border-radius:4px; }
+.mini-cal-date.ceremony { background: rgba(124,58,237,0.15);color: #5e28b7;      font-weight:600; border-radius:4px; }
 
 /* Legend */
 .sidebar-card { background:var(--off-white); border:1px solid var(--light-gray); border-radius:8px; padding:24px; margin-bottom:20px; }
