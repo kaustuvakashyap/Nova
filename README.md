@@ -31,6 +31,7 @@ Nova serves as a practical sandbox for experimenting with UI/UX design and brows
 ---
 
 ## Objectives
+The primary objectives of this project are:
 
 
 
