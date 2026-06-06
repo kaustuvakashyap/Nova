@@ -32,7 +32,7 @@ Nova serves as a practical sandbox for experimenting with UI/UX design and brows
 
 ## Objectives
 
-1. Design a visually engaging, emotionally resonant, and user-friendly GUI for an academic website.
+
 2. Apply GUI principles such as alignment, contrast, spacing, and consistency.
 3. Apply UI/UX principles that enhance user immersion and engagement.
 4. Strengthen frontend development skills using core web technologies.
