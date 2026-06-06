@@ -81,6 +81,7 @@ autoTargets.forEach(({ sel, stagger }) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(22px)';
     el.style.transition = `opacity 0.68s cubic-bezier(0.22,1,0.36,1) ${i * stagger}ms, transform 0.68s cubic-bezier(0.22,1,0.36,1) ${i * stagger}ms`;
+    observer.observe(el);
   });
 });
 
