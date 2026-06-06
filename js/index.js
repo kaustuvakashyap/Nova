@@ -1,13 +1,19 @@
 /* ── Navbar scroll ────────────────── */
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
 
   // Reading progress bar
   const doc = document.documentElement;
-  const prog = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
-  document.getElementById('progress-bar').style.width = prog + '%';
-});
+  const progressBar = document.getElementById('progress-bar'); 
+
+  if (progressBar) { 
+    window.addEventListener('scroll', () => {
+      const prog = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+      progressBar.style.width = prog + '%';
+    });
+  }
 
 // Mobile menu
 const hamburger = document.getElementById('hamburger');
