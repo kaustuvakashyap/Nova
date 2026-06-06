@@ -50,8 +50,7 @@ function runHeroEntrance() {
       }
 
       if (marquee) {
-        marquee.style.transition = 'opacity 1.0s cubic-bezier(0.22,1,0.36,1) 900ms, transform 1.0s cubic-bezier(0.22,1,0.36,1) 900ms';
-        marquee.style.opacity = '1';
+        marquee.style.transition = 'opacity 0.5s cubic-bezier(0.22,1,0.36,1) 400ms, transform 0.5s cubic-bezier(0.22,1,0.36,1) 400ms';        marquee.style.opacity = '1';
         marquee.style.transform = 'translateY(0)';
       }
     });
@@ -96,13 +95,23 @@ function areaanimateCount(el, target) {
   }, 28);
 }
 
-const areastatObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      areaanimateCount(e.target, parseInt(e.target.dataset.target));
-      areastatObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.5 });
+setTimeout(() => {
+  const areastatObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const index = Array.from(
+          e.target.parentElement.parentElement.querySelectorAll('.stat-num')
+        ).indexOf(e.target);
+        
+        setTimeout(() => {
+          areaAnimateCount(e.target, parseInt(e.target.dataset.target));
+        }, index * 200); // stagger between each stat
+        
+        areastatObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
 
-document.querySelectorAll('.stat-num[data-target]').forEach(n => areastatObs.observe(n));
+  document.querySelectorAll('.stat-num[data-target]').forEach(n => areastatObs.observe(n));
+
+}, 900);
