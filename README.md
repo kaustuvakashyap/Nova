@@ -34,9 +34,7 @@ Nova serves as a practical sandbox for experimenting with UI/UX design and brows
 
 
 
-4. Strengthen frontend development skills using core web technologies.
-5. Present academic, cultural, historical, and institutional information in a coherent and intuitive manner.
-6. Simulate how a university communicates its mission, departments, campus life, alumni, and student community through digital media.
+
 
 ---
 
