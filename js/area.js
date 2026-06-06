@@ -103,7 +103,7 @@ const areastatObs = new IntersectionObserver((entries) => {
       ).indexOf(e.target);
 
       setTimeout(() => {
-        areaAnimateCount(e.target, parseInt(e.target.dataset.target));
+        areaanimateCount(e.target, parseInt(e.target.dataset.target));
       }, index * 200);
 
       areastatObs.unobserve(e.target);
