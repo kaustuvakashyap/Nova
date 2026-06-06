@@ -205,6 +205,8 @@ Or visit the live deployment directly:
 🔗 [https://gargee1989.github.io/Nova/](https://gargee1989.github.io/Nova/)
 
 ---
+## Future Scopes
+
 
 ## Authors
 
