@@ -1,5 +1,5 @@
-  // ── HERO ENTRANCE ─────────────────────────────────────────────────────────
-  // Wrapped in a function so it re-runs on back/forward navigation (bfcache)
+// ── HERO ENTRANCE ─────────────────────────────────────────────────────────
+// Wrapped in a function so it re-runs on back/forward navigation (bfcache)
   function runHeroEntrance() {
     const heroEls = document.querySelectorAll('.page-hero-content > *');
     heroEls.forEach((el, i) => {
@@ -58,7 +58,7 @@
     if (e.persisted) runHeroEntrance();
   });
 
-  // ── INTERSECTION OBSERVER ─────────────────────────────────────────────────
+// ── INTERSECTION OBSERVER ─────────────────────────────────────────────────
   const revealObs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -69,7 +69,7 @@
     });
   }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 
-  // ── SCROLL REVEAL — existing .reveal elements ─────────────────────────────
+// ── SCROLL REVEAL — existing .reveal elements ─────────────────────────────
   const delayMap = { 'reveal-delay-1': 80, 'reveal-delay-2': 160, 'reveal-delay-3': 240, 'reveal-delay-4': 320 };
 
   document.querySelectorAll('.reveal').forEach(el => {
@@ -81,7 +81,7 @@
     revealObs.observe(el);
   });
 
-  // ── AUTO-TAG — grid children without .reveal ──────────────────────────────
+// ── AUTO-TAG — grid children without .reveal ──────────────────────────────
   const autoTargets = [
     { sel: '.event-row',                stagger: 60  },
     { sel: '.deadline-card',            stagger: 80  },
@@ -102,7 +102,7 @@
     });
   });
 
-  // ── FILTER TABS ───────────────────────────────────────────────────────────
+// ── FILTER TABS ───────────────────────────────────────────────────────────
   document.querySelectorAll('.filter-tabs a').forEach(tab => {
     tab.addEventListener('click', (e) => {
       e.preventDefault();
@@ -110,3 +110,81 @@
       tab.classList.add('active');
     });
   });
+
+// ── MINI CALENDAR ─────────────────────────────────────────────────────────
+const highlightDates = { 
+  '2026-5-22': 'highlight', 
+  '2026-5-25': 'has-event', 
+  '2026-5-29': 'has-event', 
+  '2026-5-31': 'has-event', 
+  '2026-6-15': 'has-event', 
+  '2026-7-4':  'highlight',    
+};
+// more events can be added in similar manner like: '2026-6-15': 'has-event'  or  '2026-6-20': 'highlight'
+
+const today = new Date();
+let calYear  = today.getFullYear();
+let calMonth = today.getMonth(); // 0-indexed
+
+const calTitle  = document.getElementById('calTitle');
+const calDates  = document.getElementById('calDates');
+const calPrev   = document.getElementById('calPrev');
+const calNext   = document.getElementById('calNext');
+
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+function renderMiniCal(year, month) {
+  calTitle.textContent = `${MONTHS[month]} ${year}`;
+  calDates.innerHTML = '';
+
+  const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
+  // Convert Sunday-start to Monday-start
+  const startOffset = (firstDay === 0) ? 6 : firstDay - 1;
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const daysInPrev  = new Date(year, month, 0).getDate();
+
+  // Previous month overflow
+  for (let i = startOffset - 1; i >= 0; i--) {
+    const d = document.createElement('div');
+    d.className = 'mini-cal-date other-month';
+    d.textContent = daysInPrev - i;
+    calDates.appendChild(d);
+  }
+
+  // Current month days
+  for (let day = 1; day <= daysInMonth; day++) {
+    const d = document.createElement('div');
+    const key = `${year}-${month + 1}-${day}`;
+    const isToday = day === today.getDate() && month === today.getMonth() && year === today.getFullYear();
+
+    d.className = 'mini-cal-date';
+    if (isToday)               d.classList.add('today');
+    if (highlightDates[key])   d.classList.add(highlightDates[key]);
+    d.textContent = day;
+    calDates.appendChild(d);
+  }
+
+  // Next month overflow to fill grid
+  const totalCells = startOffset + daysInMonth;
+  const remaining  = totalCells % 7 === 0 ? 0 : 7 - (totalCells % 7);
+  for (let i = 1; i <= remaining; i++) {
+    const d = document.createElement('div');
+    d.className = 'mini-cal-date other-month';
+    d.textContent = i;
+    calDates.appendChild(d);
+  }
+}
+
+calPrev.addEventListener('click', () => {
+  calMonth--;
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  renderMiniCal(calYear, calMonth);
+});
+
+calNext.addEventListener('click', () => {
+  calMonth++;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  renderMiniCal(calYear, calMonth);
+});
+
+renderMiniCal(calYear, calMonth);

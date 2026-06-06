@@ -433,59 +433,25 @@
       <div class="calendar-sidebar reveal reveal-delay-2">
 
         <!-- Mini calendar -->
-        <div class="mini-cal">
-          <div class="mini-cal-header">
-            <button class="mini-cal-nav"><i class="fa fa-chevron-left"></i></button>
-            <span>May 2026</span>
-            <button class="mini-cal-nav"><i class="fa fa-chevron-right"></i></button>
-          </div>
-          <div class="mini-cal-grid">
-            <div class="mini-cal-days">
-              <div class="mini-cal-day-label">M</div><div class="mini-cal-day-label">T</div>
-              <div class="mini-cal-day-label">W</div><div class="mini-cal-day-label">T</div>
-              <div class="mini-cal-day-label">F</div><div class="mini-cal-day-label">S</div>
-              <div class="mini-cal-day-label">S</div>
-            </div>
-            <div class="mini-cal-dates">
-              <!-- April overflow -->
-              <div class="mini-cal-date other-month">28</div>
-              <div class="mini-cal-date other-month">29</div>
-              <div class="mini-cal-date other-month">30</div>
-              <div class="mini-cal-date other-month">1</div>
-              <div class="mini-cal-date other-month">2</div>
-              <div class="mini-cal-date other-month">3</div>
-              <div class="mini-cal-date other-month">4</div>
-              <!-- May -->
-              <div class="mini-cal-date">5</div>
-              <div class="mini-cal-date">6</div>
-              <div class="mini-cal-date">7</div>
-              <div class="mini-cal-date">8</div>
-              <div class="mini-cal-date">9</div>
-              <div class="mini-cal-date">10</div>
-              <div class="mini-cal-date">11</div>
-              <div class="mini-cal-date">12</div>
-              <div class="mini-cal-date">13</div>
-              <div class="mini-cal-date">14</div>
-              <div class="mini-cal-date">15</div>
-              <div class="mini-cal-date today">16</div>
-              <div class="mini-cal-date">17</div>
-              <div class="mini-cal-date">18</div>
-              <div class="mini-cal-date">19</div>
-              <div class="mini-cal-date">20</div>
-              <div class="mini-cal-date">21</div>
-              <div class="mini-cal-date highlight">22</div>
-              <div class="mini-cal-date">23</div>
-              <div class="mini-cal-date">24</div>
-              <div class="mini-cal-date has-event">25</div>
-              <div class="mini-cal-date">26</div>
-              <div class="mini-cal-date">27</div>
-              <div class="mini-cal-date">28</div>
-              <div class="mini-cal-date has-event">29</div>
-              <div class="mini-cal-date">30</div>
-              <div class="mini-cal-date has-event">31</div>
-            </div>
-          </div>
+      <div class="mini-cal">
+        <div class="mini-cal-header">
+          <button class="mini-cal-nav" id="calPrev"><i class="fa fa-chevron-left"></i></button>
+          <span id="calTitle">May 2026</span>
+          <button class="mini-cal-nav" id="calNext"><i class="fa fa-chevron-right"></i></button>
         </div>
+        <div class="mini-cal-grid">
+          <div class="mini-cal-days">
+            <div class="mini-cal-day-label">M</div>
+            <div class="mini-cal-day-label">T</div>
+            <div class="mini-cal-day-label">W</div>
+            <div class="mini-cal-day-label">T</div>
+            <div class="mini-cal-day-label">F</div>
+            <div class="mini-cal-day-label">S</div>
+            <div class="mini-cal-day-label">S</div>
+          </div>
+          <div class="mini-cal-dates" id="calDates"></div>
+        </div>
+      </div>
 
         <!-- Legend -->
         <div class="sidebar-card">
