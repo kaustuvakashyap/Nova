@@ -98,13 +98,16 @@
 /* ========== FACULTY PROGRAMS ========== */
 .faculty { padding: 100px 0; background: #fff; }
 .faculty-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.faculty-card { border: 1px solid var(--text-muted); border-radius: 6px; overflow: hidden; transition: all 0.3s; position: relative; }
+.faculty-card { border: 1px solid var(--text-muted); border-radius: 6px; overflow: hidden; transition: all 0.3s; position: relative; display: flex; }
 .faculty-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(14,26,58,0.12); border-color: var(--gold); }
-.faculty-card-inner { padding: 32px 28px; }
+.faculty-card-inner { padding: 32px 28px; display: flex; flex-direction: column; height: 100%;}
 .faculty-num { font-family: 'Cormorant Garamond', serif; font-size: 60px; font-weight: 700; color: rgba(14,26,58,0.06); line-height: 1; margin-bottom: -10px; }
 .faculty-icon { font-size: 32px; color: var(--blue-mid); margin-bottom: 16px; }
 .faculty-card h4 { font-size: 17px; font-weight: 600; color: var(--navy); margin-bottom: 10px; line-height: 1.3; }
 .faculty-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+.faculty-card .card-link {
+  margin-top: auto;
+}
 
 /* ========== CAMPUS LIFE ========== */
 .campus { padding: 100px 0; background: var(--navy); position: relative; overflow: hidden; }
