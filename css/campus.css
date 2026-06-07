@@ -10,7 +10,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(48px,5vw,72px); line-height: 1.05; font-weight: 700; color: var(--navy);
 }
-.section-title em { font-style: italic; color: var(--blue-mid); }
+.section-title em { font-style: italic; color: var(--gold); }
 .section-header { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 52px; }
 
 .link-arrow {
