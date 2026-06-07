@@ -235,7 +235,7 @@ tbody tr:hover     { background: rgba(30,61,143,.04); }
 .eb-meta span { font-size: 14px; color: rgba(255,255,255,.65); display: flex; align-items: center; gap: 8px; }
 .eb-meta i    { color: var(--gold); }
 .btn-gold { display: inline-flex; align-items: center; gap: 8px; background: var(--gold); color: var(--navy); padding: 16px 32px; border-radius: 4px; font-size: 14px; font-weight: 700; text-decoration: none; white-space: nowrap; transition: all .25s; }
-.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,.35); }
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px);}
 
 /* ─── RESPONSIVE ─────────────────────────────────────  */
 @media (max-width: 1024px) {

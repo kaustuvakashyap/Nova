@@ -254,7 +254,7 @@
     padding: 16px 36px; border-radius: 4px; font-weight: 600; font-size: 14px; letter-spacing: 0.5px;
     text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.25s;
   }
-  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.3); }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px);}
   .btn-outline {
     border: 1.5px solid var(--navy); color: var(--navy);
     padding: 16px 36px; border-radius: 4px; font-size: 14px; font-weight: 500;
